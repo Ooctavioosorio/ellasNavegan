@@ -23,6 +23,7 @@ ellasNavegan/
 │   └── logo.png              # (PENDIENTE) Logo de Ellas Navegan
 ├── src/
 │   ├── assets/
+│   │   ├── fonts/            # Tipografía The Seasons (.otf)
 │   │   └── images/           # (PENDIENTE) Imágenes del sitio
 │   ├── components/
 │   │   ├── Navbar.tsx        # Navegación principal
@@ -61,20 +62,39 @@ ellasNavegan/
 
 ---
 
-## Variables CSS (Colores Actuales)
+## Paleta de Colores Oficial
 
 Ubicadas en `src/App.css`:
 
 ```css
 :root {
-  --color-primary: #b8956c;        /* Dorado/beige - color principal */
-  --color-primary-dark: #a07d5a;   /* Dorado oscuro - hover */
-  --color-text: #333;              /* Texto principal */
-  --color-text-light: #666;        /* Texto secundario */
+  /* Dorados/Beige */
+  --color-primary: #b78e51;        /* Dorado principal */
+  --color-primary-light: #e0c092;  /* Dorado claro */
+  --color-primary-dark: #654e2b;   /* Marrón oscuro */
+
+  /* Verdes/Teal */
+  --color-accent: #0a7d7d;         /* Verde azulado */
+  --color-accent-dark: #0c3339;    /* Verde oscuro/negro */
+
+  /* Neutros */
+  --color-text: #0c3339;           /* Texto principal */
+  --color-text-light: #654e2b;     /* Texto secundario */
   --color-bg-light: #faf8f5;       /* Fondo claro/crema */
-  --color-white: #fff;             /* Blanco */
+  --color-white: #fff;
 }
 ```
+
+---
+
+## Tipografías
+
+- **Títulos (h1-h6):** The Seasons (archivos en `src/assets/fonts/`)
+- **Cuerpo:** Open Sans (Google Fonts)
+
+Variantes de The Seasons disponibles:
+- Regular, Light, Bold
+- Italic, Light Italic, Bold Italic
 
 ---
 
@@ -111,13 +131,14 @@ npm run preview
 - [x] Página Contacto con todas las secciones
 - [x] Estilos base responsive
 - [x] Variables CSS preparadas para personalización
+- [x] Paleta de colores oficial implementada
+- [x] Tipografía The Seasons integrada (títulos)
+- [x] Tipografía Open Sans integrada (cuerpo)
 
 ### ⏳ Pendiente (Esperando diseños de Canva)
 
 - [ ] Agregar logo en `public/logo.png`
 - [ ] Agregar imágenes del sitio en `src/assets/images/`
-- [ ] Actualizar colores según paleta de Canva
-- [ ] Agregar tipografías de Google Fonts
 - [ ] Reemplazar placeholders de imágenes por fotos reales
 - [ ] Integrar widget de calendario (Calendly u otro)
 - [ ] Agregar enlace real de WhatsApp
@@ -180,4 +201,4 @@ import miImagen from '../assets/images/nombre.jpg';
 
 ---
 
-*Última actualización: Diciembre 2024*
+*Última actualización: 1 Diciembre 2025*

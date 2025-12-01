@@ -1,11 +1,23 @@
-/* Variables globales */
+/* Variables globales - Paleta oficial Ellas Navegan */
 :root {
-  --color-primary: #b8956c;
-  --color-primary-dark: #a07d5a;
-  --color-text: #333;
-  --color-text-light: #666;
-  --color-bg-light: #faf8f5;
+  /* Dorados/Beige */
+  --color-primary: #b78e51;        /* Dorado principal */
+  --color-primary-light: #e0c092;  /* Dorado claro */
+  --color-primary-dark: #654e2b;   /* Marrón oscuro */
+
+  /* Verdes/Teal */
+  --color-accent: #0a7d7d;         /* Verde azulado */
+  --color-accent-dark: #0c3339;    /* Verde oscuro/negro */
+
+  /* Neutros */
+  --color-text: #0c3339;           /* Texto principal (verde oscuro) */
+  --color-text-light: #654e2b;     /* Texto secundario */
+  --color-bg-light: #faf8f5;       /* Fondo claro/crema */
   --color-white: #fff;
+
+  /* Tipografías */
+  --font-heading: 'The Seasons', Georgia, serif;
+  --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* Reset básico */
@@ -20,7 +32,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-family: var(--font-body);
   color: var(--color-text);
   line-height: 1.6;
 }
@@ -43,6 +55,7 @@ main {
 
 /* Tipografía */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.3;
 }
