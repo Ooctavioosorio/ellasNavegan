@@ -1,0 +1,183 @@
+.la-experiencia {
+  padding-top: 80px;
+}
+
+/* HERO */
+.hero-experiencia {
+  background: var(--color-bg-light);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-experiencia h1 {
+  font-size: 2.2rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.hero-experiencia .intro {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+}
+
+/* DINÁMICAS */
+.dinamicas {
+  padding: 5rem 0;
+  background: var(--color-white);
+}
+
+.dinamicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dinamica-card {
+  background: var(--color-bg-light);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.dinamica-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.dinamica-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dinamica-card li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--color-text-light);
+}
+
+.dinamica-card li::before {
+  content: "•";
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
+}
+
+.nota-dinamicas {
+  text-align: center;
+  font-style: italic;
+  color: var(--color-text);
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* POR QUÉ SAN BLAS */
+.por-que-san-blas {
+  padding: 5rem 0;
+  background: var(--color-bg-light);
+  text-align: center;
+}
+
+.por-que-san-blas h2 {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.por-que-san-blas p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.por-que-san-blas .btn-primary {
+  margin-top: 2rem;
+}
+
+/* QUÉ TE LLEVAS */
+.que-te-llevas {
+  padding: 5rem 0;
+  background: var(--color-white);
+}
+
+.lista-llevas {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.lista-llevas li {
+  padding: 1rem;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--color-text-light);
+  background: var(--color-bg-light);
+  border-radius: 8px;
+}
+
+.lista-llevas li::before {
+  content: "–";
+  color: var(--color-primary);
+  position: absolute;
+  left: 1rem;
+  font-weight: bold;
+}
+
+/* GALERÍA */
+.galeria {
+  padding: 5rem 0;
+  background: var(--color-bg-light);
+}
+
+.galeria h2 {
+  text-align: center;
+}
+
+.galeria-intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-item {
+  aspect-ratio: 4/3;
+  background: #ddd;
+  border-radius: 8px;
+}
+
+/* CTA */
+.cta-experiencia {
+  padding: 5rem 0;
+  background: var(--color-white);
+  text-align: center;
+}
+
+.cta-texto {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dinamicas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lista-llevas {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

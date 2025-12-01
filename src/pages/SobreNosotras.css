@@ -1,0 +1,177 @@
+.sobre-nosotras {
+  padding-top: 80px;
+}
+
+/* HERO */
+.hero-sobre {
+  background: var(--color-bg-light);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-sobre h1 {
+  font-size: 2.2rem;
+  color: var(--color-text);
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.4;
+}
+
+.hero-sobre .subtitulo {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* NUESTRA ESENCIA */
+.nuestra-esencia {
+  padding: 5rem 0;
+  background: var(--color-white);
+}
+
+/* POR QUÉ MUJERES */
+.por-que-mujeres {
+  padding: 5rem 0;
+  background: var(--color-bg-light);
+}
+
+.por-que-mujeres .destacado {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 1.5rem 0;
+}
+
+.cierre-seccion {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* FUNDADORA */
+.fundadora {
+  padding: 5rem 0;
+  background: var(--color-white);
+}
+
+.fundadora-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.fundadora-imagen .imagen-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--color-bg-light);
+  border-radius: 10px;
+}
+
+.fundadora-texto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.frase-destacada {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 1.5rem 0;
+}
+
+/* EQUIPO */
+.nuestro-equipo {
+  padding: 5rem 0;
+  background: var(--color-bg-light);
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.miembro-card {
+  text-align: center;
+}
+
+.miembro-foto {
+  width: 150px;
+  height: 150px;
+  background: var(--color-white);
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.miembro-card h4 {
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.miembro-card p {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+/* BARCOS */
+.nuestros-barcos {
+  padding: 5rem 0;
+  background: var(--color-white);
+  text-align: center;
+}
+
+.barcos-detalle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  text-align: left;
+}
+
+.barco-item {
+  background: var(--color-bg-light);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.barco-item.premium {
+  border: 2px solid var(--color-primary);
+}
+
+.barco-imagen {
+  width: 100%;
+  height: 250px;
+  background: #ddd;
+}
+
+.barco-info {
+  padding: 1.5rem;
+}
+
+.barco-info h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .fundadora-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .fundadora-imagen {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .barcos-detalle {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-sobre h1 {
+    font-size: 1.7rem;
+  }
+}

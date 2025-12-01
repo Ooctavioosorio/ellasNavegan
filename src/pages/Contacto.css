@@ -1,0 +1,116 @@
+.contacto {
+  padding-top: 80px;
+}
+
+/* HERO */
+.hero-contacto {
+  background: var(--color-bg-light);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-contacto h1 {
+  font-size: 2.2rem;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.hero-contacto .subtitulo {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* AGENDA LLAMADA */
+.agenda-llamada {
+  padding: 5rem 0;
+  background: var(--color-white);
+  text-align: center;
+}
+
+.calendario-container {
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.calendario-placeholder {
+  background: var(--color-bg-light);
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  border: 2px dashed var(--color-primary);
+}
+
+.calendario-placeholder p {
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+}
+
+/* OTRAS FORMAS */
+.otras-formas {
+  padding: 5rem 0;
+  background: var(--color-bg-light);
+}
+
+.otras-formas h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contactos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contacto-item {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contacto-icon {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.contacto-item h3 {
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.contacto-item p {
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+
+/* CIERRE */
+.cierre-contacto {
+  padding: 5rem 0;
+  background: var(--color-white);
+  text-align: center;
+}
+
+.cierre-contacto p {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-contacto h1 {
+    font-size: 1.7rem;
+  }
+
+  .contactos-grid {
+    grid-template-columns: 1fr;
+  }
+}
