@@ -20,11 +20,12 @@
 ```
 ellasNavegan/
 ├── public/
-│   └── logo.png              # (PENDIENTE) Logo de Ellas Navegan
+│   └── logo.png              # Logo de Ellas Navegan ✓
 ├── src/
 │   ├── assets/
 │   │   ├── fonts/            # Tipografía The Seasons (.otf)
-│   │   └── images/           # (PENDIENTE) Imágenes del sitio
+│   │   └── images/           # Imágenes del sitio
+│   │       └── hero.png      # Imagen hero ✓
 │   ├── components/
 │   │   ├── Navbar.tsx        # Navegación principal
 │   │   ├── Navbar.css
@@ -70,18 +71,22 @@ Ubicadas en `src/App.css`:
 :root {
   /* Dorados/Beige */
   --color-primary: #b78e51;        /* Dorado principal */
-  --color-primary-light: #e0c092;  /* Dorado claro */
+  --color-primary-light: #e6cfae;  /* Dorado claro (gradiente) */
   --color-primary-dark: #654e2b;   /* Marrón oscuro */
 
-  /* Verdes/Teal */
-  --color-accent: #0a7d7d;         /* Verde azulado */
-  --color-accent-dark: #0c3339;    /* Verde oscuro/negro */
+  /* Fondos */
+  --color-bg: #f1efea;             /* Fondo principal página */
+  --color-bg-light: #faf8f5;       /* Fondo claro/crema */
 
-  /* Neutros */
+  /* Texto */
   --color-text: #0c3339;           /* Texto principal */
   --color-text-light: #654e2b;     /* Texto secundario */
-  --color-bg-light: #faf8f5;       /* Fondo claro/crema */
+  --color-menu-text: #96713e;      /* Texto menú navbar */
   --color-white: #fff;
+
+  /* Gradientes */
+  /* Botón CTA: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51) */
+  /* Texto título: linear-gradient(135deg, #b78e51, #654e2b) */
 }
 ```
 
@@ -134,12 +139,15 @@ npm run preview
 - [x] Paleta de colores oficial implementada
 - [x] Tipografía The Seasons integrada (títulos)
 - [x] Tipografía Open Sans integrada (cuerpo)
+- [x] Logo en `public/logo.png`
+- [x] **Navbar estilizado según Canva** (menú 12px, gradiente en botón CTA)
+- [x] **Hero section implementado según Canva** (título 41px con gradiente, subtítulo 13px)
+- [x] **Imagen hero** en `src/assets/images/hero.png`
 
 ### ⏳ Pendiente (Esperando diseños de Canva)
 
-- [ ] Agregar logo en `public/logo.png`
-- [ ] Agregar imágenes del sitio en `src/assets/images/`
-- [ ] Reemplazar placeholders de imágenes por fotos reales
+- [ ] Agregar resto de imágenes del sitio en `src/assets/images/`
+- [ ] Estilizar páginas Sobre Nosotras, La Experiencia y Contacto según Canva
 - [ ] Integrar widget de calendario (Calendly u otro)
 - [ ] Agregar enlace real de WhatsApp
 - [ ] Configurar enlaces de redes sociales
@@ -201,4 +209,4 @@ import miImagen from '../assets/images/nombre.jpg';
 
 ---
 
-*Última actualización: 1 Diciembre 2025*
+*Última actualización: 2 Diciembre 2025*

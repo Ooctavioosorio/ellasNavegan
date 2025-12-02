@@ -2,8 +2,9 @@
 :root {
   /* Dorados/Beige */
   --color-primary: #b78e51;        /* Dorado principal */
-  --color-primary-light: #e0c092;  /* Dorado claro */
+  --color-primary-light: #e6cfae;  /* Dorado claro */
   --color-primary-dark: #654e2b;   /* Marrón oscuro */
+  --color-menu-text: #96713e;      /* Texto del menú */
 
   /* Verdes/Teal */
   --color-accent: #0a7d7d;         /* Verde azulado */
@@ -12,6 +13,7 @@
   /* Neutros */
   --color-text: #0c3339;           /* Texto principal (verde oscuro) */
   --color-text-light: #654e2b;     /* Texto secundario */
+  --color-bg: #f1efea;             /* Fondo principal página */
   --color-bg-light: #faf8f5;       /* Fondo claro/crema */
   --color-white: #fff;
 
@@ -35,6 +37,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-text);
   line-height: 1.6;
+  background-color: var(--color-bg);
 }
 
 .app {

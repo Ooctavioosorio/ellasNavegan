@@ -16,7 +16,7 @@ const Navbar = () => {
         <ul className="navbar-menu">
           <li>
             <Link to="/" className={isActive('/') ? 'active' : ''}>
-              Inicio
+              Home
             </Link>
           </li>
           <li>
@@ -37,7 +37,7 @@ const Navbar = () => {
         </ul>
 
         <Link to="/contacto" className="navbar-cta">
-          Agenda tu llamada
+          Agenda llamada y reserva
         </Link>
       </div>
     </nav>

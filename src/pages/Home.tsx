@@ -1,20 +1,32 @@
 import './Home.css';
+import heroImage from '../assets/images/hero.png';
 
 const Home = () => {
   return (
     <div className="home">
       {/* HERO SECTION */}
       <section className="hero">
-        <div className="hero-content">
-          <h1>Viajes en barco creados exclusivamente para mujeres en San Blas, Panamá.</h1>
-          <p className="hero-subtitle">
-            Experiencias íntimas y cuidadosamente diseñadas para mujeres que buscan
-            una pausa real, aventura auténtica y bienestar profundo en uno de los lugares
-            más puros del Caribe. Rutas guiadas por mujeres, pensadas para soltar la
-            autoexigencia, bajar el ritmo y reconectar contigo misma en un entorno
-            seguro, hermoso y femenino.
-          </p>
-          <a href="#contacto" className="btn-primary">Agenda tu llamada gratuita</a>
+        <div className="hero-container">
+          <div className="hero-content">
+            <h1 className="hero-title">
+              <span className="hero-title-light">Viajes exclusivos en</span>
+              <br />
+              <span className="hero-title-light">barco para </span>
+              <span className="hero-title-bold">mujeres en</span>
+              <br />
+              <span className="hero-title-bold">San Blas, Panamá.</span>
+            </h1>
+            <p className="hero-subtitle">
+              Experiencias pensadas por y para mujeres que buscan una pausa
+              real, aventura, autenticidad y bienestar profundo en medio del
+              Caribe. Rutas guiadas para soltar la autoexigencia, bajar el ritmo
+              y reconectar contigo en un entorno seguro y femenino.
+            </p>
+            <a href="/contacto" className="hero-cta">Agendar llamada gratuita</a>
+          </div>
+          <div className="hero-image">
+            <img src={heroImage} alt="Mujer disfrutando en barco en San Blas" className="hero-img" />
+          </div>
         </div>
       </section>
 
