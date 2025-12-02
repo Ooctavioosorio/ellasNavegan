@@ -6,6 +6,7 @@ import actividadesBienestarImg from '../assets/images/actividadesdebienestar.png
 import exploracionNaturalImg from '../assets/images/exploracionnatural.png';
 import alojamientoBordoImg from '../assets/images/alojamientoabordo.png';
 import regalosEspecialesImg from '../assets/images/regalosespeciales.png';
+import sanBlasPanamaImg from '../assets/images/sanblasPanama.png';
 
 const Home = () => {
   return (
@@ -142,41 +143,42 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PARA QUIÉN ES ESTE VIAJE */}
-      <section className="para-quien">
-        <div className="container">
-          <h2>Para quién es este viaje</h2>
-          <p>Esta experiencia es para mujeres que:</p>
-          <ul className="lista-para-quien">
-            <li>Necesitan un descanso real del ritmo que siempre exige más.</li>
-            <li>Buscan claridad, equilibrio y un espacio para respirar distinto.</li>
-            <li>Quieren vivir el mar sin sentirse apuradas, expuestas o tensas.</li>
-            <li>Valoran un entorno femenino, seguro y cuidadosamente pensado.</li>
-            <li>Desean compartir con mujeres auténticas, profundas y sensibles.</li>
-            <li>Quieren aventura, pero sin renunciar al bienestar.</li>
-          </ul>
-          <p className="cierre">Si te resuena viajar con propósito, este espacio es para ti.</p>
-          <a href="/contacto" className="btn-primary">Agenda tu llamada</a>
+      {/* SAN BLAS, PANAMÁ */}
+      <section className="san-blas" style={{ backgroundImage: `url(${sanBlasPanamaImg})` }}>
+        <div className="san-blas-container">
+          <h2 className="san-blas-title">San Blas, Panamá</h2>
+          <div className="san-blas-overlay">
+            <p>
+              San Blas no es solo un destino: es un paraíso de conexión. Más de 300 islas, aguas transparentes, arrecifes intactos, comunidades y culturas únicas y una calma que te baja el ritmo y te hace conectar apenas llegas. Aquí no vienes a "hacer turismo" únicamente. Vienes a un lugar donde la naturaleza te invita a soltar, contemplar y volver a ti. Es el escenario perfecto para mujeres que buscan una pausa profunda, auténtica y llena de sentido.
+            </p>
+            <p>
+              Y lo más mágico es que todo sucede despacio, sin ruido y sin exigencias. La vida corre diferente: el mar marca el tiempo, la naturaleza te sostiene y la energía femenina que se crea entre nosotras transforma el viaje en algo más que un escape… se vuelve un recordatorio de quién eres cuando te das permiso de simplemente SER.
+            </p>
+          </div>
+          <a href="/la-experiencia" className="san-blas-btn">Saber más</a>
         </div>
       </section>
 
-      {/* SAN BLAS, PANAMÁ */}
-      <section className="san-blas">
-        <div className="container">
-          <h2>San Blas, Panamá</h2>
-          <p className="intro">San Blas no es solo un destino: es un paraíso de conexión.</p>
-          <p>
-            Más de 300 islas, aguas transparentes, arrecifes intactos, comunidades y
-            culturas únicas y una calma que te baja el ritmo y te hace conectar apenas
-            llegas.
-          </p>
-          <p>
-            Aquí no vienes a "hacer turismo" únicamente. Vienes a un lugar donde la
-            naturaleza te invita a soltar, contemplar y volver a ti. Es el escenario perfecto para mujeres
-            que buscan una pausa profunda, auténtica y llena de sentido.
-          </p>
-          <div className="galeria-san-blas">
-            {/* Galería visual - placeholder */}
+      {/* PARA QUIÉN ES ESTE VIAJE */}
+      <section className="para-quien">
+        <div className="para-quien-container">
+          <div className="para-quien-left">
+            <h2 className="para-quien-title">¿Para quién es<br />este viaje?</h2>
+          </div>
+          <div className="para-quien-right">
+            <div className="para-quien-card">
+              <h3 className="para-quien-subtitle">Esta experiencia es para mujeres que:</h3>
+              <ul className="para-quien-lista">
+                <li>Necesitan un descanso real del ritmo que siempre exige más.</li>
+                <li>Buscan claridad, equilibrio y un espacio para respirar distinto.</li>
+                <li>Quieren vivir el mar sin sentirse apuradas, expuestas o tensas.</li>
+                <li>Valoran un entorno femenino, seguro y cuidadosamente pensado.</li>
+                <li>Desean compartir con mujeres auténticas, profundas y sensibles.</li>
+                <li>Quieren aventura, pero sin renunciar al bienestar.</li>
+              </ul>
+              <p className="para-quien-cierre"><strong>Si te resuena viajar con propósito, este espacio es para ti.</strong></p>
+              <a href="/contacto" className="para-quien-btn">Haz una reserva</a>
+            </div>
           </div>
         </div>
       </section>

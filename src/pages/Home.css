@@ -342,43 +342,180 @@ section p {
 
 /* PARA QUIÉN */
 .para-quien {
-  background: var(--color-white);
+  background: var(--color-bg);
+  padding: 5rem 6rem;
 }
 
-.lista-para-quien {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
+.para-quien-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
 }
 
-.lista-para-quien li {
-  padding: 0.75rem 0;
-  padding-left: 2rem;
-  position: relative;
-  color: var(--color-text-light);
+.para-quien-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.lista-para-quien li::before {
-  content: "–";
-  color: var(--color-primary);
-  position: absolute;
-  left: 0;
-}
-
-.cierre {
+.para-quien-title {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  line-height: 1.1;
   font-style: italic;
-  margin: 2rem 0;
+  background: linear-gradient(90deg, #b78e51, #654e2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.para-quien-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.para-quien-card {
+  background: var(--color-bg);
+  border: 3px solid transparent;
+  border-radius: 20px;
+  padding: 3rem;
+  max-width: 600px;
+  background-image: linear-gradient(var(--color-bg), var(--color-bg)), linear-gradient(90deg, #b78e51, #654e2b);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.para-quien-subtitle {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #b78e51, #654e2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.para-quien-lista {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.para-quien-lista li {
+  padding: 0.5rem 0;
+  color: var(--color-menu-text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.para-quien-lista li::marker {
+  color: var(--color-menu-text);
+}
+
+.para-quien-cierre {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-menu-text);
+  margin: 1.5rem 0;
+}
+
+.para-quien-cierre strong {
+  font-weight: 600;
+}
+
+.para-quien-btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--color-menu-text);
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--color-menu-text);
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.para-quien-btn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
 }
 
 /* SAN BLAS */
 .san-blas {
-  background: var(--color-bg-light);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  position: relative;
 }
 
-.san-blas .intro {
-  font-size: 1.3rem;
+.san-blas-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.san-blas-title {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.san-blas-overlay {
+  background: rgba(0, 80, 90, 0.5);
+  padding: 2.5rem 3rem;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin-bottom: 2rem;
+}
+
+.san-blas-overlay p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-white);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.san-blas-overlay p:last-child {
+  margin-bottom: 0;
+}
+
+.san-blas-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+  color: #623e2a;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 16px;
   font-weight: 500;
-  color: var(--color-text);
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.san-blas-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(183, 142, 81, 0.4);
+  background: linear-gradient(135deg, #c9a066, #e6cfae, #c9a066);
 }
 
 /* EQUIPO Y BARCOS */
@@ -508,6 +645,26 @@ section p {
   .experiencia-card-image img {
     height: 300px;
   }
+
+  .san-blas-title {
+    font-size: 56px;
+  }
+
+  .san-blas-overlay {
+    padding: 2rem 2.5rem;
+  }
+
+  .para-quien {
+    padding: 4rem 2rem;
+  }
+
+  .para-quien-title {
+    font-size: 48px;
+  }
+
+  .para-quien-subtitle {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -564,6 +721,27 @@ section p {
   }
 
   .experiencia-cards-row-center {
+    max-width: 100%;
+  }
+
+  .para-quien-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .para-quien-left {
+    justify-content: center;
+  }
+
+  .para-quien-title {
+    text-align: center;
+  }
+
+  .para-quien-right {
+    justify-content: center;
+  }
+
+  .para-quien-card {
     max-width: 100%;
   }
 }
@@ -645,5 +823,51 @@ section p {
 
   .barcos-grid {
     grid-template-columns: 1fr;
+  }
+
+  .san-blas {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .san-blas-title {
+    font-size: 36px;
+  }
+
+  .san-blas-overlay {
+    padding: 1.5rem;
+  }
+
+  .san-blas-overlay p {
+    font-size: 14px;
+  }
+
+  .san-blas-btn {
+    padding: 0.85rem 2rem;
+    font-size: 14px;
+  }
+
+  .para-quien {
+    padding: 3rem 1.5rem;
+  }
+
+  .para-quien-title {
+    font-size: 36px;
+  }
+
+  .para-quien-card {
+    padding: 2rem;
+  }
+
+  .para-quien-subtitle {
+    font-size: 20px;
+  }
+
+  .para-quien-lista li {
+    font-size: 14px;
+  }
+
+  .para-quien-cierre {
+    font-size: 14px;
   }
 }
