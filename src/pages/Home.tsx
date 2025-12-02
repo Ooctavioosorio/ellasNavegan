@@ -1,5 +1,11 @@
 import './Home.css';
 import heroImage from '../assets/images/hero.png';
+import hero2Image from '../assets/images/hero2.png';
+import capitanasExpertasImg from '../assets/images/capitanasexpertas.png';
+import actividadesBienestarImg from '../assets/images/actividadesdebienestar.png';
+import exploracionNaturalImg from '../assets/images/exploracionnatural.png';
+import alojamientoBordoImg from '../assets/images/alojamientoabordo.png';
+import regalosEspecialesImg from '../assets/images/regalosespeciales.png';
 
 const Home = () => {
   return (
@@ -30,61 +36,109 @@ const Home = () => {
         </div>
       </section>
 
-      {/* QUÉ ES ELLAS NAVEGAN */}
-      <section className="que-es">
-        <div className="container">
-          <h2>Qué es Ellas Navegan</h2>
-          <p>
-            Ellas Navegan es una agencia especializada en rutas marítimas por San Blas,
-            creada para mujeres que necesitan desconectar de la rutina, respirar lejos de
-            la exigencia diaria y constante y vivir el mar desde un lugar auténtico,
-            cuidado, seguro y profundamente humano.
-          </p>
-          <p className="destacado">No es un tour.</p>
-          <p>
-            Es una experiencia diseñada desde la perspectiva femenina: bienestar,
-            aventura, desconexión, seguridad, calma, introspección y unidad con mujeres
-            que viven ritmos similares a los tuyos o con visiones a compartir.
-          </p>
-          <p>
-            Cada viaje está liderado por <strong>Jessica Milagro</strong>, marinera con más de 15 años
-            navegando y recorriendo distintos países, junto a un equipo
-            mayoritariamente femenino.
-          </p>
-          <p>
-            Ellas entienden los detalles que realmente hacen que una mujer se sienta
-            tranquila: higiene impecable, logística bien pensada, espacios cómodos,
-            ritmos respetuosos y dinámicas que te acompañarán sin presionarte.
-          </p>
+      {/* QUIÉNES SOMOS */}
+      <section className="quienes-somos">
+        <div className="quienes-somos-container">
+          <div className="quienes-somos-image">
+            <img src={hero2Image} alt="Mujeres disfrutando en el barco" className="quienes-somos-img" />
+          </div>
+          <div className="quienes-somos-content">
+            <h2 className="quienes-somos-title">¿Quienes<br />somos?</h2>
+            <p className="quienes-somos-text">
+              Ellas Navegan es una agencia especializada en rutas marítimas por <strong>San Blas</strong>, creada para mujeres que necesitan desconectar de la rutina, respirar lejos de la exigencia diaria y constante y vivir el mar desde un lugar auténtico, cuidado, seguro y profundamente humano.
+            </p>
+            <h3 className="quienes-somos-subtitle">No es un tour</h3>
+            <p className="quienes-somos-text">
+              Una experiencia creada desde la mirada femenina: bienestar, aventura, desconexión y seguridad entre mujeres con ritmos y visiones afines. Cada viaje es liderado por <strong>Jessica Milagro</strong>, marinera con más de 6 años navegando, junto a un equipo mayoritariamente femenino que cuida cada detalle para que te sientas tranquila: higiene impecable, logística clara, espacios cómodos y dinámicas que acompañan sin presión.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* LA EXPERIENCIA A BORDO */}
       <section className="experiencia-bordo">
-        <div className="container">
-          <h2>La experiencia a bordo</h2>
-          <p>
+        <div className="experiencia-bordo-container">
+          <h2 className="experiencia-bordo-title">La experiencia <em>a bordo</em></h2>
+          <p className="experiencia-bordo-subtitle">
             Nuestras rutas recorren distintas islas del archipiélago, combinando el paraíso
-            de San Blas, Panamá, playas vírgenes, bienestar y dinámicas especiales.
+            de San Blas, Panama, playas vírgenes, bienestar y dinámicas especiales.
           </p>
-          <div className="incluye-lista">
-            <h3>Incluye:</h3>
-            <ul>
-              <li>Navegación diseñada por capitanas expertas</li>
-              <li>Tripulación femenina</li>
-              <li>Actividades de bienestar</li>
-              <li>Exploración natural (islas, snorkel, caminatas)</li>
-              <li>Alojamiento a bordo</li>
-              <li>Alimentación completa</li>
-              <li>Convivencia íntima con un grupo femenino</li>
-              <li>Regalos y detalles pensados para acompañar tu viaje</li>
-            </ul>
+
+          {/* Primera fila - 3 cards */}
+          <div className="experiencia-cards-row">
+            <div className="experiencia-card">
+              <div className="experiencia-card-image">
+                <img src={capitanasExpertasImg} alt="Capitanas expertas" />
+                <div className="experiencia-card-overlay">
+                  <span className="experiencia-card-label">Capitanas expertas</span>
+                  <span className="experiencia-card-number">01.</span>
+                </div>
+              </div>
+              <div className="experiencia-card-content">
+                <p>Mujeres que navegan y te guían con total seguridad.</p>
+                <span className="experiencia-card-arrow">→</span>
+              </div>
+            </div>
+
+            <div className="experiencia-card">
+              <div className="experiencia-card-image">
+                <img src={actividadesBienestarImg} alt="Actividades de bienestar" />
+                <div className="experiencia-card-overlay">
+                  <span className="experiencia-card-label">Actividades de bienestar</span>
+                  <span className="experiencia-card-number">02.</span>
+                </div>
+              </div>
+              <div className="experiencia-card-content">
+                <p>Espacios para reconectar y recargar energía.</p>
+                <span className="experiencia-card-arrow">→</span>
+              </div>
+            </div>
+
+            <div className="experiencia-card">
+              <div className="experiencia-card-image">
+                <img src={exploracionNaturalImg} alt="Exploración natural" />
+                <div className="experiencia-card-overlay">
+                  <span className="experiencia-card-label">Exploración natural</span>
+                  <span className="experiencia-card-number">03.</span>
+                </div>
+              </div>
+              <div className="experiencia-card-content">
+                <p>Islas y todo un paraíso para que exploras sin prisa.</p>
+                <span className="experiencia-card-arrow">→</span>
+              </div>
+            </div>
           </div>
-          <p className="objetivo">
-            El objetivo es simple: <strong>vivir el mar desde la calma, la seguridad, la aventura y la posibilidad de
-            reconectar contigo sin prisa.</strong>
-          </p>
-          <a href="/la-experiencia" className="btn-secondary">Saber más</a>
+
+          {/* Segunda fila - 2 cards centradas */}
+          <div className="experiencia-cards-row experiencia-cards-row-center">
+            <div className="experiencia-card">
+              <div className="experiencia-card-image">
+                <img src={alojamientoBordoImg} alt="Alojamiento a bordo" />
+                <div className="experiencia-card-overlay">
+                  <span className="experiencia-card-label">Alojamiento a bordo</span>
+                  <span className="experiencia-card-number">01.</span>
+                </div>
+              </div>
+              <div className="experiencia-card-content">
+                <p>Descansas sobre el mar, en calma total.</p>
+                <span className="experiencia-card-arrow">→</span>
+              </div>
+            </div>
+
+            <div className="experiencia-card">
+              <div className="experiencia-card-image">
+                <img src={regalosEspecialesImg} alt="Regalos especiales" />
+                <div className="experiencia-card-overlay">
+                  <span className="experiencia-card-label">Regalos especiales</span>
+                  <span className="experiencia-card-number">02.</span>
+                </div>
+              </div>
+              <div className="experiencia-card-content">
+                <p>Detalles exclusivos pensados solo para mujeres especiales.</p>
+                <span className="experiencia-card-arrow">→</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
