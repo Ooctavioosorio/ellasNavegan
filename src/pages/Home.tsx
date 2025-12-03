@@ -9,6 +9,8 @@ import regalosEspecialesImg from '../assets/images/regalosespeciales.png';
 import sanBlasPanamaImg from '../assets/images/sanblasPanama.png';
 import equiposBarcosImg from '../assets/images/equiposybarcos.png';
 import elMarEstalistoImg from '../assets/images/elmarestalisto.png';
+import trofeoImg from '../assets/images/trofeo.png';
+import maletaImg from '../assets/images/maleta.png';
 
 const Home = () => {
   return (
@@ -196,14 +198,18 @@ const Home = () => {
 
           <div className="barcos-grid">
             <div className="barco-card" data-aos="fade-right" data-aos-delay="200">
-              <div className="barco-card-icon">🏆</div>
+              <div className="barco-card-icon">
+                <img src={trofeoImg} alt="Trofeo" />
+              </div>
               <h3 className="barco-card-title">Catamarán Esencial</h3>
               <p className="barco-card-text">
                 Una experiencia íntima, cuidada y femenina con todo lo necesario para disfrutar San Blas con bienestar y tranquilidad.
               </p>
             </div>
             <div className="barco-card" data-aos="fade-left" data-aos-delay="300">
-              <div className="barco-card-icon">🧳</div>
+              <div className="barco-card-icon">
+                <img src={maletaImg} alt="Maleta" />
+              </div>
               <h3 className="barco-card-title">Catamarán Premium</h3>
               <ul className="barco-card-lista">
                 <li>Espacios más amplios</li>

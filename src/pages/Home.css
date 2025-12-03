@@ -578,8 +578,13 @@ section p {
 }
 
 .barco-card-icon {
-  font-size: 48px;
   margin-bottom: 1rem;
+}
+
+.barco-card-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .barco-card-title {
