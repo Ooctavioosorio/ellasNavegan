@@ -631,8 +631,8 @@ section p {
 
 .equipo-barcos-brillo {
   position: absolute;
-  top: 0;
-  left: 2%;
+  top: 28%;
+  left: 8%;
   width: 300px;
   height: auto;
   pointer-events: none;

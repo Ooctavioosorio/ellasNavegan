@@ -1,16 +1,19 @@
 import './SobreNosotras.css';
+import heroSobreImg from '../assets/images/mujeresCreandoExperiencia.png';
 
 const SobreNosotras = () => {
   return (
     <div className="sobre-nosotras">
       {/* HERO */}
-      <section className="hero-sobre">
-        <div className="container">
-          <h1>Somos mujeres creando experiencias únicas en el mar para mujeres extraordinarias.</h1>
-          <p className="subtitulo">
-            Viajes seguros, conscientes y transformadores en uno de los lugares más
-            hermosos del mundo.
-          </p>
+      <section className="hero-sobre" style={{ backgroundImage: `url(${heroSobreImg})` }}>
+        <div className="hero-sobre-overlay">
+          <div className="container">
+            <h1>Somos mujeres creando experiencias únicas en el mar para mujeres extraordinarias.</h1>
+            <p className="subtitulo">
+              Viajes seguros, conscientes y transformadores en uno de los lugares más
+              hermosos del mundo.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -68,23 +71,11 @@ const SobreNosotras = () => {
             <div className="fundadora-texto">
               <h2>La Fundadora — Jessica Milagro</h2>
               <p>
-                Con más de 15 años navegando por distintos países, Jessica conoce el mar
-                como pocas mujeres. Después de años observando cómo viajaban las
-                mujeres, entendió algo que marcó el nacimiento de esta marca:
-              </p>
-              <p className="frase-destacada">las mujeres vivimos el mar distinto.</p>
-              <p>
-                Tenemos ritmos, emociones y necesidades que pocas veces se contemplan
-                en rutas mixtas o tradicionales.
-              </p>
-              <p>
-                Por eso creó Ellas Navegan:<br />
-                un espacio donde el mar se vive desde la calma, el bienestar, la seguridad y la
-                intención.
-              </p>
-              <p>
-                Jessica es profesional, cálida, intuitiva y profundamente consciente del
-                impacto que una experiencia en el mar puede tener en una mujer.
+                Con más de 6 años de experiencia navegando Mar Abierto en veleros y costeando en yates de lujo por el Caribe (Panamá, Colombia, Islas ABC, Bahamas, Martinica, República Dominicana, St. Marteen, St. Barth) y parte del Mediterráneo (Barcelona, Sur de Francia, Italia —Costa Siciliana— y Túnez). 
+
+                Después de años observando cómo viajaban las mujeres, entendió algo que marcó el nacimiento de esta marca: las mujeres vivimos el mar distinto. Tenemos ritmos, emociones y necesidades que pocas veces se contemplan en rutas mixtas o tradicionales. 
+
+                Por eso creó Ellas Navegan: un espacio donde el mar se vive desde la calma, el bienestar, la seguridad y la intención. Jessica es profesional, cálida, intuitiva y profundamente consciente del impacto que una experiencia en el mar puede tener en una mujer. 
               </p>
               <a href="/contacto" className="btn-primary">Agenda llamada gratis conmigo</a>
             </div>
