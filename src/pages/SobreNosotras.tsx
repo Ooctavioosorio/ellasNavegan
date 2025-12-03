@@ -1,6 +1,7 @@
 import './SobreNosotras.css';
 import heroSobreImg from '../assets/images/mujeresCreandoExperiencia.png';
 import nuestraEsenciaImg from '../assets/images/nuestaEsencia.png';
+import fundadoraImg from '../assets/images/doradoOscuro.png';
 
 const SobreNosotras = () => {
   return (
@@ -64,23 +65,21 @@ const SobreNosotras = () => {
 
       {/* LA FUNDADORA */}
       <section className="fundadora">
-        <div className="container">
-          <div className="fundadora-content">
-            <div className="fundadora-imagen">
-              {/* Placeholder para imagen de Jessica */}
-              <div className="imagen-placeholder"></div>
-            </div>
-            <div className="fundadora-texto">
-              <h2>La Fundadora — Jessica Milagro</h2>
-              <p>
-                Con más de 6 años de experiencia navegando Mar Abierto en veleros y costeando en yates de lujo por el Caribe (Panamá, Colombia, Islas ABC, Bahamas, Martinica, República Dominicana, St. Marteen, St. Barth) y parte del Mediterráneo (Barcelona, Sur de Francia, Italia —Costa Siciliana— y Túnez). 
-
-                Después de años observando cómo viajaban las mujeres, entendió algo que marcó el nacimiento de esta marca: las mujeres vivimos el mar distinto. Tenemos ritmos, emociones y necesidades que pocas veces se contemplan en rutas mixtas o tradicionales. 
-
-                Por eso creó Ellas Navegan: un espacio donde el mar se vive desde la calma, el bienestar, la seguridad y la intención. Jessica es profesional, cálida, intuitiva y profundamente consciente del impacto que una experiencia en el mar puede tener en una mujer. 
-              </p>
-              <a href="/contacto" className="btn-primary">Agenda llamada gratis conmigo</a>
-            </div>
+        <div className="fundadora-content">
+          <div className="fundadora-imagen">
+            <img src={fundadoraImg} alt="Jessica Milagro - Fundadora" />
+          </div>
+          <div className="fundadora-card">
+            <h2>Fundadora — <em>Jessica Milagro</em></h2>
+            <p>
+              Con más de 6 años de experiencia navegando Mar Abierto en veleros y costeando en yates de lujo por el Caribe (Panamá, Colombia, Islas ABC, Bahamas, Martinica, República Dominicana, St. Marteen, St. Barth) y parte del Mediterráneo (Barcelona, Sur de Francia, Italia —Costa Siciliana— y Túnez).
+            </p>
+            <p>
+              Después de años observando cómo viajaban las mujeres, entendió algo que marcó el nacimiento de esta marca: las mujeres vivimos el mar distinto. Tenemos ritmos, emociones y necesidades que pocas veces se contemplan en rutas mixtas o tradicionales.
+            </p>
+            <p>
+              Por eso creó Ellas Navegan: un espacio donde el mar se vive desde la calma, el bienestar, la seguridad y la intención. Jessica es profesional, cálida, intuitiva y profundamente consciente del impacto que una experiencia en el mar puede tener en una mujer.
+            </p>
           </div>
         </div>
       </section>

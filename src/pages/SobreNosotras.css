@@ -154,33 +154,72 @@
 /* FUNDADORA */
 .fundadora {
   padding: 5rem 0;
-  background: var(--color-white);
+  background: var(--color-bg);
 }
 
 .fundadora-content {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.fundadora-imagen .imagen-placeholder {
-  width: 100%;
-  aspect-ratio: 3/4;
-  background: var(--color-bg-light);
-  border-radius: 10px;
+.fundadora-imagen {
+  flex-shrink: 0;
+  margin-left: -150px;
 }
 
-.fundadora-texto h2 {
-  font-size: 1.8rem;
+.fundadora-imagen img {
+  width: 700px;
+  height: auto;
+}
+
+.fundadora-card {
+  max-width: 600px;
+  background: var(--color-bg);
+  border-radius: 20px;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.fundadora-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.fundadora-card h2 {
+  font-family: 'The Seasons', serif;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #b78e51, #654e2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1.5rem;
 }
 
-.frase-destacada {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  margin: 1.5rem 0;
+.fundadora-card h2 em {
+  font-style: italic;
+}
+
+.fundadora-card p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-menu-text);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
 }
 
 /* EQUIPO */
@@ -280,11 +319,20 @@
   .fundadora-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 0 1.5rem;
   }
 
   .fundadora-imagen {
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto;
+  }
+
+  .fundadora-card {
+    padding: 1.5rem;
+  }
+
+  .fundadora-card h2 {
+    font-size: 1.8rem;
   }
 
   .barcos-detalle {

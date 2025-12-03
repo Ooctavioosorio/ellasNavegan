@@ -12,6 +12,7 @@
 - **Bundler:** Vite 5
 - **Routing:** React Router DOM 6
 - **Estilos:** CSS puro (preparado para replicar diseños de Canva)
+- **Animaciones:** AOS (Animate On Scroll)
 
 ---
 
@@ -149,6 +150,18 @@ npm run preview
 - [x] **Sección El equipo y los barcos** - Fondo imagen, 2 cards transparentes con borde beige
 - [x] **Sección CTA Final** - Grid imagen + pasos, título sobre imagen, iconos circulares
 - [x] **Sección Muy pronto 2026** - Fondo #00383a, card con borde beige, texto itálica
+- [x] **Transiciones AOS en Home** - Animaciones scroll en todas las secciones
+
+### Página Sobre Nosotras (estilizada según Canva)
+- [x] **Hero** - Imagen de fondo con overlay, título gradiente dorado
+- [x] **Sección Nuestra Esencia** - Fondo gradiente dorado, grid imagen + texto
+- [x] **Sección ¿Por qué solo para mujeres?** - Fondo beige, título con "mujeres" en itálica, botón CTA
+- [x] **Sección Fundadora** - Imagen ilustración + tarjeta con borde gradiente redondeado
+
+### Imágenes utilizadas en Sobre Nosotras (`src/assets/images/`)
+- `mujeresCreandoExperiencia.png` - Hero Sobre Nosotras
+- `nuestaEsencia.png` - Sección Nuestra Esencia
+- `doradoOscuro.png` - Ilustración Fundadora
 
 ### Imágenes utilizadas en Home (`src/assets/images/`)
 
@@ -165,7 +178,8 @@ npm run preview
 
 ### ⏳ Pendiente
 
-- [ ] Estilizar páginas Sobre Nosotras, La Experiencia y Contacto según Canva
+- [ ] Continuar estilizando Sobre Nosotras (secciones: Nuestro Equipo, Nuestros Barcos)
+- [ ] Estilizar páginas La Experiencia y Contacto según Canva
 - [ ] Integrar widget de calendario (Calendly u otro)
 - [ ] Agregar enlace real de WhatsApp
 - [ ] Configurar enlaces de redes sociales
@@ -220,6 +234,37 @@ import miImagen from '../assets/images/nombre.jpg';
 
 ---
 
+## Transiciones AOS (Animate On Scroll)
+
+La librería AOS está configurada en `src/App.tsx` con los siguientes parámetros:
+
+```typescript
+AOS.init({
+  duration: 800,        // Duración de animación en ms
+  easing: 'ease-out-cubic',
+  once: true,           // Solo animar una vez
+  offset: 100,          // Offset desde el viewport
+});
+```
+
+### Tipos de animaciones usadas en Home:
+- `fade-right` - Aparece desde la derecha
+- `fade-left` - Aparece desde la izquierda
+- `fade-up` - Aparece desde abajo
+- `fade-down` - Aparece desde arriba
+- `zoom-in` - Aparece con zoom
+
+### Uso en componentes:
+```tsx
+<div data-aos="fade-up" data-aos-delay="100">
+  Contenido animado
+</div>
+```
+
+El atributo `data-aos-delay` permite escalonar las animaciones (en ms).
+
+---
+
 ## Contacto del Proyecto
 
 - **Cliente:** Ellas Navegan
@@ -228,4 +273,4 @@ import miImagen from '../assets/images/nombre.jpg';
 
 ---
 
-*Última actualización: 2 Diciembre 2025*
+*Última actualización: 3 Diciembre 2025*
