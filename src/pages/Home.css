@@ -711,6 +711,58 @@ section p {
   background: linear-gradient(135deg, #c9a066, #e6cfae, #c9a066);
 }
 
+/* MUY PRONTO 2026 */
+.muy-pronto {
+  background: #00383a;
+  padding: 5rem 6rem;
+}
+
+.muy-pronto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.muy-pronto-title {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  color: var(--color-bg);
+  margin-bottom: 3rem;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.muy-pronto-title em {
+  font-style: italic;
+}
+
+.muy-pronto-card {
+  border: 1px solid var(--color-bg);
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.muy-pronto-text {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--color-bg);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.muy-pronto-firma {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-bg);
+  margin: 0;
+}
+
+.muy-pronto-firma em {
+  font-style: italic;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1200px) {
   .hero {
@@ -783,6 +835,22 @@ section p {
 
   .cta-final-title {
     font-size: 40px;
+  }
+
+  .muy-pronto {
+    padding: 4rem 2rem;
+  }
+
+  .muy-pronto-title {
+    font-size: 56px;
+  }
+
+  .muy-pronto-card {
+    padding: 2.5rem 3rem;
+  }
+
+  .muy-pronto-text {
+    font-size: 16px;
   }
 }
 
@@ -1057,6 +1125,28 @@ section p {
 
   .cta-final-btn {
     padding: 0.85rem 2rem;
+    font-size: 14px;
+  }
+
+  .muy-pronto {
+    padding: 3rem 1.5rem;
+  }
+
+  .muy-pronto-title {
+    font-size: 40px;
+    margin-bottom: 2rem;
+  }
+
+  .muy-pronto-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .muy-pronto-text {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+
+  .muy-pronto-firma {
     font-size: 14px;
   }
 }

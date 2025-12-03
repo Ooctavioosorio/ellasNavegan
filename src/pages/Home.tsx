@@ -240,6 +240,19 @@ const Home = () => {
         </div>
         <a href="/contacto" className="cta-final-btn">Agendar llamada gratuita</a>
       </section>
+
+      {/* MUY PRONTO 2026 */}
+      <section className="muy-pronto">
+        <div className="muy-pronto-container">
+          <h2 className="muy-pronto-title">Muy pronto<br /><em>2026</em></h2>
+          <div className="muy-pronto-card">
+            <p className="muy-pronto-text">
+              A partir de 2026 abriremos rutas estilo Backpacker entre Colombia y Panamá (ida y vuelta). Una opción más accesible, aventurera y perfecta para mujeres que quieren vivir el cruce del Caribe de forma auténtica, segura y acompañada por tripulación femenina.
+            </p>
+            <p className="muy-pronto-firma"><em>-Jessica Milagro, CEO de Ellas Navegan.</em></p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -141,16 +141,35 @@ npm run preview
 - [x] Tipografía Open Sans integrada (cuerpo)
 - [x] Logo en `public/logo.png`
 - [x] **Navbar estilizado según Canva** (menú 12px, gradiente en botón CTA)
-- [x] **Hero section implementado según Canva** (título 41px con gradiente, subtítulo 13px)
-- [x] **Imagen hero** en `src/assets/images/hero.png`
+- [x] **Hero section implementado según Canva** (título 50px con gradiente, subtítulo 16px)
+- [x] **Sección ¿Quiénes somos?** - Grid 2 columnas, imagen + texto con gradiente
+- [x] **Sección La experiencia a bordo** - 5 cards con imágenes (3+2 centradas)
+- [x] **Sección San Blas, Panamá** - Fondo imagen, overlay semitransparente, título blanco itálica
+- [x] **Sección ¿Para quién es este viaje?** - Grid 2 columnas, card con borde gradiente dorado
+- [x] **Sección El equipo y los barcos** - Fondo imagen, 2 cards transparentes con borde beige
+- [x] **Sección CTA Final** - Grid imagen + pasos, título sobre imagen, iconos circulares
+- [x] **Sección Muy pronto 2026** - Fondo #00383a, card con borde beige, texto itálica
 
-### ⏳ Pendiente (Esperando diseños de Canva)
+### Imágenes utilizadas en Home (`src/assets/images/`)
 
-- [ ] Agregar resto de imágenes del sitio en `src/assets/images/`
+- `hero.png` - Hero principal
+- `hero2.png` - Sección Quiénes somos
+- `capitanasexpertas.png` - Card experiencia
+- `actividadesdebienestar.png` - Card experiencia
+- `exploracionnatural.png` - Card experiencia
+- `alojamientoabordo.png` - Card experiencia
+- `regalosespeciales.png` - Card experiencia
+- `sanblasPanama.png` - Fondo sección San Blas
+- `equiposybarcos.png` - Fondo sección Equipo y barcos
+- `elmarestalisto.png` - Imagen CTA Final
+
+### ⏳ Pendiente
+
 - [ ] Estilizar páginas Sobre Nosotras, La Experiencia y Contacto según Canva
 - [ ] Integrar widget de calendario (Calendly u otro)
 - [ ] Agregar enlace real de WhatsApp
 - [ ] Configurar enlaces de redes sociales
+- [ ] Footer según diseño Canva
 
 ---
 
