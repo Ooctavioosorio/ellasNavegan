@@ -520,92 +520,195 @@ section p {
 
 /* EQUIPO Y BARCOS */
 .equipo-barcos {
-  background: var(--color-white);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.equipo-barcos-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.equipo-barcos-title {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  color: var(--color-bg);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.equipo-barcos-title em {
+  font-style: italic;
+}
+
+.equipo-barcos-subtitle {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-bg);
+  line-height: 1.8;
+  max-width: 700px;
+  margin-bottom: 3rem;
 }
 
 .barcos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin: 2rem 0;
+  width: 100%;
+  max-width: 900px;
 }
 
 .barco-card {
-  background: var(--color-bg-light);
-  padding: 2rem;
-  border-radius: 10px;
+  background: transparent;
+  border: 2px solid var(--color-bg);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
 }
 
-.barco-card h3 {
-  color: var(--color-primary);
+.barco-card-icon {
+  font-size: 48px;
   margin-bottom: 1rem;
 }
 
-.barco-card.premium {
-  border: 2px solid var(--color-primary);
+.barco-card-title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  color: var(--color-bg);
+  margin-bottom: 1rem;
 }
 
-.barco-card ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
+.barco-card-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-bg);
+  line-height: 1.6;
 }
 
-.barco-card li {
+.barco-card-lista {
+  list-style: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.barco-card-lista li {
   padding: 0.3rem 0;
-  padding-left: 1rem;
-  position: relative;
-  color: var(--color-text-light);
-  font-size: 0.95rem;
+  color: var(--color-bg);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.barco-card li::before {
-  content: "–";
-  position: absolute;
-  left: 0;
-  color: var(--color-primary);
-}
-
-.nota-tripulacion {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: var(--color-bg-light);
-  border-left: 3px solid var(--color-primary);
+.barco-card-lista li::marker {
+  color: var(--color-bg);
 }
 
 /* CTA FINAL */
 .cta-final {
-  background: var(--color-bg-light);
+  background: var(--color-bg);
+  padding: 5rem 6rem;
   text-align: center;
 }
 
-.cta-final h2 {
-  font-size: 2.2rem;
+.cta-final-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
-.proceso-lista {
-  list-style: none;
-  padding: 0;
-  margin: 2rem auto;
-  max-width: 500px;
-  text-align: left;
-}
-
-.proceso-lista li {
-  padding: 1rem 0;
-  padding-left: 2.5rem;
+.cta-final-image {
   position: relative;
-  color: var(--color-text-light);
-  counter-increment: step;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.proceso-lista li::before {
-  content: counter(step) ".";
+.cta-final-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.cta-final-title {
   position: absolute;
-  left: 0;
-  color: var(--color-primary);
-  font-weight: 600;
-  font-size: 1.1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-heading);
+  font-size: 48px;
+  color: var(--color-white);
+  text-align: center;
+  font-style: italic;
+  line-height: 1.2;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.cta-final-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.cta-paso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-paso-icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--color-menu-text);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.cta-paso-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-menu-text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cta-final-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+  color: var(--color-bg);
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-final-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(183, 142, 81, 0.4);
+  background: linear-gradient(135deg, #c9a066, #e6cfae, #c9a066);
 }
 
 /* RESPONSIVE */
@@ -664,6 +767,22 @@ section p {
 
   .para-quien-subtitle {
     font-size: 24px;
+  }
+
+  .equipo-barcos-title {
+    font-size: 56px;
+  }
+
+  .barco-card-title {
+    font-size: 24px;
+  }
+
+  .cta-final {
+    padding: 4rem 2rem;
+  }
+
+  .cta-final-title {
+    font-size: 40px;
   }
 }
 
@@ -743,6 +862,16 @@ section p {
 
   .para-quien-card {
     max-width: 100%;
+  }
+
+  .cta-final-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .cta-final-image {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
@@ -868,6 +997,66 @@ section p {
   }
 
   .para-quien-cierre {
+    font-size: 14px;
+  }
+
+  .equipo-barcos {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .equipo-barcos-title {
+    font-size: 36px;
+  }
+
+  .equipo-barcos-subtitle {
+    font-size: 14px;
+  }
+
+  .barco-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .barco-card-title {
+    font-size: 22px;
+  }
+
+  .barco-card-text {
+    font-size: 14px;
+  }
+
+  .barco-card-lista li {
+    font-size: 13px;
+  }
+
+  .cta-final {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-final-container {
+    gap: 2rem;
+  }
+
+  .cta-final-image {
+    max-width: 100%;
+  }
+
+  .cta-final-title {
+    font-size: 28px;
+  }
+
+  .cta-paso-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .cta-paso-text {
+    font-size: 14px;
+  }
+
+  .cta-final-btn {
+    padding: 0.85rem 2rem;
     font-size: 14px;
   }
 }

@@ -7,6 +7,8 @@ import exploracionNaturalImg from '../assets/images/exploracionnatural.png';
 import alojamientoBordoImg from '../assets/images/alojamientoabordo.png';
 import regalosEspecialesImg from '../assets/images/regalosespeciales.png';
 import sanBlasPanamaImg from '../assets/images/sanblasPanama.png';
+import equiposBarcosImg from '../assets/images/equiposybarcos.png';
+import elMarEstalistoImg from '../assets/images/elmarestalisto.png';
 
 const Home = () => {
   return (
@@ -184,29 +186,26 @@ const Home = () => {
       </section>
 
       {/* EL EQUIPO & LOS BARCOS */}
-      <section className="equipo-barcos">
-        <div className="container">
-          <h2>El equipo & los barcos</h2>
-          <p>
-            Nuestros barcos —cada uno con su capitana, personalidad y nivel de
-            experiencia— están diseñados para navegaciones suaves, descanso cómodo y
-            días llenos de conexión.
+      <section className="equipo-barcos" style={{ backgroundImage: `url(${equiposBarcosImg})` }}>
+        <div className="equipo-barcos-container">
+          <h2 className="equipo-barcos-title">El equipo y<br /><em>los barcos</em></h2>
+          <p className="equipo-barcos-subtitle">
+            Nuestros barcos —cada uno con su capitana, personalidad y nivel de experiencia—
+            están diseñados para navegaciones suaves, descanso cómodo y días llenos de conexión.
           </p>
-          <p>Contamos con <strong>dos opciones de experiencia</strong>, ambas seguras y hermosas,
-          pero con niveles distintos:</p>
 
           <div className="barcos-grid">
             <div className="barco-card">
-              <h3>Barco Esencial</h3>
-              <p>
-                Una experiencia íntima, cuidada y femenina con todo lo necesario para
-                disfrutar San Blas con bienestar y tranquilidad.
+              <div className="barco-card-icon">🏆</div>
+              <h3 className="barco-card-title">Catamarán Esencial</h3>
+              <p className="barco-card-text">
+                Una experiencia íntima, cuidada y femenina con todo lo necesario para disfrutar San Blas con bienestar y tranquilidad.
               </p>
             </div>
-            <div className="barco-card premium">
-              <h3>Barco Premium</h3>
-              <p>Para mujeres que buscan mayor comodidad:</p>
-              <ul>
+            <div className="barco-card">
+              <div className="barco-card-icon">🧳</div>
+              <h3 className="barco-card-title">Catamarán Premium</h3>
+              <ul className="barco-card-lista">
                 <li>Espacios más amplios</li>
                 <li>Gastronomía fresca (incluye mariscos y langostas en temporada)</li>
                 <li>Detalles especiales</li>
@@ -214,27 +213,32 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <p className="nota-tripulacion">
-            <strong>En ambos:</strong> La tripulación femenina se encarga de todo: navegación,
-            seguridad, logística, alimentación, limpieza y acompañamiento.
-          </p>
-          <a href="/sobre-nosotras" className="btn-secondary">Ver equipo</a>
         </div>
       </section>
 
       {/* CTA FINAL */}
       <section className="cta-final">
-        <div className="container">
-          <h2>El mar está listo. Nosotras también.</h2>
-          <p>Este es un proceso simple y pensado para tu tranquilidad:</p>
-          <ol className="proceso-lista">
-            <li>Agenda una llamada gratuita con Jessica.</li>
-            <li>Conversan sobre tu intención, ritmo y preguntas.</li>
-            <li>Si la experiencia es para ti, eliges fechas y reservas tu lugar.</li>
-          </ol>
-          <p>Cada grupo se arma con cuidado para asegurar armonía y bienestar entre mujeres.</p>
-          <a href="/contacto" className="btn-primary btn-large">Agenda tu llamada gratuita</a>
+        <div className="cta-final-container">
+          <div className="cta-final-image">
+            <img src={elMarEstalistoImg} alt="Mujeres en barco disfrutando" />
+            <h2 className="cta-final-title">El mar está listo.<br />Nosotras también.</h2>
+          </div>
+          <div className="cta-final-content">
+            <div className="cta-paso">
+              <div className="cta-paso-icon">📞</div>
+              <p className="cta-paso-text">Agenda una llamada<br />gratuita con Jessica.</p>
+            </div>
+            <div className="cta-paso">
+              <div className="cta-paso-icon">💬</div>
+              <p className="cta-paso-text">Conversan sobre tu intención,<br />ritmo y preguntas.</p>
+            </div>
+            <div className="cta-paso">
+              <div className="cta-paso-icon">📅</div>
+              <p className="cta-paso-text">Si es para ti, eliges fechas y<br />reservas tu lugar.</p>
+            </div>
+          </div>
         </div>
+        <a href="/contacto" className="cta-final-btn">Agendar llamada gratuita</a>
       </section>
     </div>
   );
