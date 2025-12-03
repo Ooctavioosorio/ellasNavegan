@@ -61,25 +61,94 @@
 /* NUESTRA ESENCIA */
 .nuestra-esencia {
   padding: 5rem 0;
-  background: var(--color-white);
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+}
+
+.nuestra-esencia-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nuestra-esencia-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.nuestra-esencia-texto h2 {
+  font-family: 'The Seasons', serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #b78e51, #654e2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+.nuestra-esencia-texto p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-menu-text);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
 }
 
 /* POR QUÉ MUJERES */
 .por-que-mujeres {
   padding: 5rem 0;
-  background: var(--color-bg-light);
+  background: var(--color-bg);
 }
 
-.por-que-mujeres .destacado {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  margin: 1.5rem 0;
+.por-que-mujeres .container {
+  max-width: 1200px;
+  padding: 0 2rem;
 }
 
-.cierre-seccion {
-  margin-top: 2rem;
-  font-size: 1.1rem;
+.por-que-mujeres h2 {
+  font-family: 'The Seasons', serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #b78e51, #654e2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 2rem;
+}
+
+.por-que-mujeres h2 em {
+  font-style: italic;
+}
+
+.por-que-mujeres p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-menu-text);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  max-width: 900px;
+}
+
+.btn-mujeres {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--color-bg);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-mujeres:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(183, 142, 81, 0.3);
 }
 
 /* FUNDADORA */
@@ -220,5 +289,15 @@
 
   .barcos-detalle {
     grid-template-columns: 1fr;
+  }
+
+  .nuestra-esencia-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .nuestra-esencia-texto h2 {
+    font-size: 2rem;
   }
 }

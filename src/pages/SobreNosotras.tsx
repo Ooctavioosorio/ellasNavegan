@@ -1,5 +1,6 @@
 import './SobreNosotras.css';
 import heroSobreImg from '../assets/images/mujeresCreandoExperiencia.png';
+import nuestraEsenciaImg from '../assets/images/nuestaEsencia.png';
 
 const SobreNosotras = () => {
   return (
@@ -19,44 +20,45 @@ const SobreNosotras = () => {
 
       {/* NUESTRA ESENCIA */}
       <section className="nuestra-esencia">
-        <div className="container">
-          <h2>Nuestra Esencia</h2>
-          <p>
-            Ellas Navegan nació para ofrecer algo que las mujeres pocas veces tenemos:
-            un espacio seguro en el mar donde podamos viajar sin tensión, sin
-            autoexigencia y sin las dinámicas que suelen acompañar a los viajes
-            tradicionales.
-          </p>
-          <p>
-            Somos una agencia creada por mujeres y para mujeres, con rutas marítimas
-            diseñadas para conectar bienestar, aventura consciente y comunidad.
-          </p>
-          <p>
-            Creemos en la claridad que aparece cuando bajamos el ritmo, en la fuerza de
-            lo femenino y en la magia de compartir con mujeres que también necesitan
-            una pausa.
-          </p>
+        <div className="nuestra-esencia-content">
+          <div className="nuestra-esencia-imagen">
+            <img src={nuestraEsenciaImg} alt="Nuestra esencia - Mujeres en barco" />
+          </div>
+          <div className="nuestra-esencia-texto">
+            <h2>Nuestra Esencia</h2>
+            <p>
+              Ellas Navegan nació para ofrecer algo que las mujeres pocas veces tenemos:
+              un espacio seguro en el mar donde podamos viajar sin tensión, sin
+              autoexigencia y sin las dinámicas que suelen acompañar a los viajes
+              tradicionales.
+            </p>
+            <p>
+              Somos una agencia creada por mujeres y para mujeres, con rutas marítimas
+              diseñadas para conectar bienestar, aventura consciente y comunidad.
+            </p>
+            <p>
+              Creemos en la claridad que aparece cuando bajamos el ritmo, en la fuerza de
+              lo femenino y en la magia de compartir con mujeres que también necesitan
+              una pausa.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* POR QUÉ SOLO PARA MUJERES */}
       <section className="por-que-mujeres">
         <div className="container">
-          <h2>Por qué solo para mujeres</h2>
-          <p className="destacado">Porque la energía cambia.</p>
+          <h2>¿Por qué solo para <em>mujeres</em>?</h2>
           <p>
-            Cuando el grupo es femenino, surge un nivel de libertad emocional,
-            seguridad y autenticidad que permite que cada mujer viaje sin máscaras.
+            Porque la energía cambia. Cuando el grupo es femenino, surge un nivel de libertad emocional, seguridad y autenticidad que permite que cada mujer viaje sin máscaras.
           </p>
           <p>
-            La tripulación entiende lo que una mujer necesita para sentirse cuidada en el
-            mar: higiene impecable, espacios tranquilos, contención emocional, ritmos
-            suaves y cero presiones.
+            La tripulación entiende lo que una mujer necesita para sentirse cuidada en el mar: higiene impecable, espacios tranquilos, contención emocional, ritmos suaves y cero presiones.
           </p>
-          <p className="cierre-seccion">
-            Esto no es un detalle.<br />
-            <strong>Es el corazón de Ellas Navegan.</strong>
+          <p>
+            Esto no es un detalle. Es el corazón de Ellas Navegan
           </p>
+          <a href="/contacto" className="btn-mujeres">Quiero ser una de ellas</a>
         </div>
       </section>
 
