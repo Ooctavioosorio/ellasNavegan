@@ -11,6 +11,7 @@ import equiposBarcosImg from '../assets/images/equiposybarcos.png';
 import elMarEstalistoImg from '../assets/images/elmarestalisto.png';
 import trofeoImg from '../assets/images/trofeo.png';
 import maletaImg from '../assets/images/maleta.png';
+import brilloImg from '../assets/images/brillo.png';
 
 const Home = () => {
   return (
@@ -149,6 +150,7 @@ const Home = () => {
 
       {/* SAN BLAS, PANAMÁ */}
       <section className="san-blas" style={{ backgroundImage: `url(${sanBlasPanamaImg})` }}>
+        <img src={brilloImg} alt="" className="san-blas-brillo" aria-hidden="true" />
         <div className="san-blas-container">
           <h2 className="san-blas-title" data-aos="fade-down">San Blas, Panamá</h2>
           <div className="san-blas-overlay" data-aos="fade-up" data-aos-delay="200">
@@ -189,6 +191,7 @@ const Home = () => {
 
       {/* EL EQUIPO & LOS BARCOS */}
       <section className="equipo-barcos" style={{ backgroundImage: `url(${equiposBarcosImg})` }}>
+        <img src={brilloImg} alt="" className="equipo-barcos-brillo" aria-hidden="true" />
         <div className="equipo-barcos-container">
           <h2 className="equipo-barcos-title" data-aos="fade-down">El equipo y<br /><em>los barcos</em></h2>
           <p className="equipo-barcos-subtitle" data-aos="fade-up" data-aos-delay="100">

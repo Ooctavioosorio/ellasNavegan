@@ -518,6 +518,16 @@ section p {
   background: linear-gradient(135deg, #c9a066, #e6cfae, #c9a066);
 }
 
+.san-blas-brillo {
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  width: 400px;
+  height: auto;
+  pointer-events: none;
+  z-index: 2;
+}
+
 /* EQUIPO Y BARCOS */
 .equipo-barcos {
   background-size: cover;
@@ -617,6 +627,16 @@ section p {
 
 .barco-card-lista li::marker {
   color: var(--color-bg);
+}
+
+.equipo-barcos-brillo {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 300px;
+  height: auto;
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* CTA FINAL */
@@ -1032,6 +1052,12 @@ section p {
     padding: 4rem 1.5rem;
   }
 
+  .san-blas-brillo {
+    width: 80px;
+    top: 2%;
+    right: 2%;
+  }
+
   .san-blas-title {
     font-size: 36px;
   }
@@ -1076,6 +1102,12 @@ section p {
   .equipo-barcos {
     min-height: auto;
     padding: 4rem 1.5rem;
+  }
+
+  .equipo-barcos-brillo {
+    width: 120px;
+    top: 0;
+    left: 0;
   }
 
   .equipo-barcos-title {
