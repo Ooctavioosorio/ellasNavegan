@@ -224,7 +224,7 @@ import miImagen from '../assets/images/nombre.jpg';
 
 - **Cliente:** Ellas Navegan
 - **Diseño:** Ama Studio (entrega en Canva)
-- **Desarrollo:** [Tu nombre/equipo]
+- **Desarrollo:** [oscar osorio]
 
 ---
 

@@ -16,7 +16,7 @@ const Home = () => {
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-container">
-          <div className="hero-content">
+          <div className="hero-content" data-aos="fade-right" data-aos-delay="100">
             <h1 className="hero-title">
               <span className="hero-title-light">Viajes exclusivos en</span>
               <br />
@@ -33,7 +33,7 @@ const Home = () => {
             </p>
             <a href="/contacto" className="hero-cta">Agendar llamada gratuita</a>
           </div>
-          <div className="hero-image">
+          <div className="hero-image" data-aos="fade-left" data-aos-delay="300">
             <img src={heroImage} alt="Mujer disfrutando en barco en San Blas" className="hero-img" />
           </div>
         </div>
@@ -42,10 +42,10 @@ const Home = () => {
       {/* QUIÉNES SOMOS */}
       <section className="quienes-somos">
         <div className="quienes-somos-container">
-          <div className="quienes-somos-image">
+          <div className="quienes-somos-image" data-aos="fade-right">
             <img src={hero2Image} alt="Mujeres disfrutando en el barco" className="quienes-somos-img" />
           </div>
-          <div className="quienes-somos-content">
+          <div className="quienes-somos-content" data-aos="fade-left" data-aos-delay="200">
             <h2 className="quienes-somos-title">¿Quienes<br />somos?</h2>
             <p className="quienes-somos-text">
               Ellas Navegan es una agencia especializada en rutas marítimas por <strong>San Blas</strong>, creada para mujeres que necesitan desconectar de la rutina, respirar lejos de la exigencia diaria y constante y vivir el mar desde un lugar auténtico, cuidado, seguro y profundamente humano.
@@ -61,15 +61,15 @@ const Home = () => {
       {/* LA EXPERIENCIA A BORDO */}
       <section className="experiencia-bordo">
         <div className="experiencia-bordo-container">
-          <h2 className="experiencia-bordo-title">La experiencia <em>a bordo</em></h2>
-          <p className="experiencia-bordo-subtitle">
+          <h2 className="experiencia-bordo-title" data-aos="fade-up">La experiencia <em>a bordo</em></h2>
+          <p className="experiencia-bordo-subtitle" data-aos="fade-up" data-aos-delay="100">
             Nuestras rutas recorren distintas islas del archipiélago, combinando el paraíso
             de San Blas, Panama, playas vírgenes, bienestar y dinámicas especiales.
           </p>
 
           {/* Primera fila - 3 cards */}
           <div className="experiencia-cards-row">
-            <div className="experiencia-card">
+            <div className="experiencia-card" data-aos="fade-up" data-aos-delay="0">
               <div className="experiencia-card-image">
                 <img src={capitanasExpertasImg} alt="Capitanas expertas" />
                 <div className="experiencia-card-overlay">
@@ -83,7 +83,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="experiencia-card">
+            <div className="experiencia-card" data-aos="fade-up" data-aos-delay="100">
               <div className="experiencia-card-image">
                 <img src={actividadesBienestarImg} alt="Actividades de bienestar" />
                 <div className="experiencia-card-overlay">
@@ -97,7 +97,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="experiencia-card">
+            <div className="experiencia-card" data-aos="fade-up" data-aos-delay="200">
               <div className="experiencia-card-image">
                 <img src={exploracionNaturalImg} alt="Exploración natural" />
                 <div className="experiencia-card-overlay">
@@ -114,7 +114,7 @@ const Home = () => {
 
           {/* Segunda fila - 2 cards centradas */}
           <div className="experiencia-cards-row experiencia-cards-row-center">
-            <div className="experiencia-card">
+            <div className="experiencia-card" data-aos="fade-up" data-aos-delay="0">
               <div className="experiencia-card-image">
                 <img src={alojamientoBordoImg} alt="Alojamiento a bordo" />
                 <div className="experiencia-card-overlay">
@@ -128,7 +128,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="experiencia-card">
+            <div className="experiencia-card" data-aos="fade-up" data-aos-delay="100">
               <div className="experiencia-card-image">
                 <img src={regalosEspecialesImg} alt="Regalos especiales" />
                 <div className="experiencia-card-overlay">
@@ -148,8 +148,8 @@ const Home = () => {
       {/* SAN BLAS, PANAMÁ */}
       <section className="san-blas" style={{ backgroundImage: `url(${sanBlasPanamaImg})` }}>
         <div className="san-blas-container">
-          <h2 className="san-blas-title">San Blas, Panamá</h2>
-          <div className="san-blas-overlay">
+          <h2 className="san-blas-title" data-aos="fade-down">San Blas, Panamá</h2>
+          <div className="san-blas-overlay" data-aos="fade-up" data-aos-delay="200">
             <p>
               San Blas no es solo un destino: es un paraíso de conexión. Más de 300 islas, aguas transparentes, arrecifes intactos, comunidades y culturas únicas y una calma que te baja el ritmo y te hace conectar apenas llegas. Aquí no vienes a "hacer turismo" únicamente. Vienes a un lugar donde la naturaleza te invita a soltar, contemplar y volver a ti. Es el escenario perfecto para mujeres que buscan una pausa profunda, auténtica y llena de sentido.
             </p>
@@ -164,10 +164,10 @@ const Home = () => {
       {/* PARA QUIÉN ES ESTE VIAJE */}
       <section className="para-quien">
         <div className="para-quien-container">
-          <div className="para-quien-left">
+          <div className="para-quien-left" data-aos="fade-right">
             <h2 className="para-quien-title">¿Para quién es<br />este viaje?</h2>
           </div>
-          <div className="para-quien-right">
+          <div className="para-quien-right" data-aos="fade-left" data-aos-delay="200">
             <div className="para-quien-card">
               <h3 className="para-quien-subtitle">Esta experiencia es para mujeres que:</h3>
               <ul className="para-quien-lista">
@@ -188,21 +188,21 @@ const Home = () => {
       {/* EL EQUIPO & LOS BARCOS */}
       <section className="equipo-barcos" style={{ backgroundImage: `url(${equiposBarcosImg})` }}>
         <div className="equipo-barcos-container">
-          <h2 className="equipo-barcos-title">El equipo y<br /><em>los barcos</em></h2>
-          <p className="equipo-barcos-subtitle">
+          <h2 className="equipo-barcos-title" data-aos="fade-down">El equipo y<br /><em>los barcos</em></h2>
+          <p className="equipo-barcos-subtitle" data-aos="fade-up" data-aos-delay="100">
             Nuestros barcos —cada uno con su capitana, personalidad y nivel de experiencia—
             están diseñados para navegaciones suaves, descanso cómodo y días llenos de conexión.
           </p>
 
           <div className="barcos-grid">
-            <div className="barco-card">
+            <div className="barco-card" data-aos="fade-right" data-aos-delay="200">
               <div className="barco-card-icon">🏆</div>
               <h3 className="barco-card-title">Catamarán Esencial</h3>
               <p className="barco-card-text">
                 Una experiencia íntima, cuidada y femenina con todo lo necesario para disfrutar San Blas con bienestar y tranquilidad.
               </p>
             </div>
-            <div className="barco-card">
+            <div className="barco-card" data-aos="fade-left" data-aos-delay="300">
               <div className="barco-card-icon">🧳</div>
               <h3 className="barco-card-title">Catamarán Premium</h3>
               <ul className="barco-card-lista">
@@ -219,33 +219,33 @@ const Home = () => {
       {/* CTA FINAL */}
       <section className="cta-final">
         <div className="cta-final-container">
-          <div className="cta-final-image">
+          <div className="cta-final-image" data-aos="fade-right">
             <img src={elMarEstalistoImg} alt="Mujeres en barco disfrutando" />
             <h2 className="cta-final-title">El mar está listo.<br />Nosotras también.</h2>
           </div>
           <div className="cta-final-content">
-            <div className="cta-paso">
+            <div className="cta-paso" data-aos="fade-left" data-aos-delay="100">
               <div className="cta-paso-icon">📞</div>
               <p className="cta-paso-text">Agenda una llamada<br />gratuita con Jessica.</p>
             </div>
-            <div className="cta-paso">
+            <div className="cta-paso" data-aos="fade-left" data-aos-delay="200">
               <div className="cta-paso-icon">💬</div>
               <p className="cta-paso-text">Conversan sobre tu intención,<br />ritmo y preguntas.</p>
             </div>
-            <div className="cta-paso">
+            <div className="cta-paso" data-aos="fade-left" data-aos-delay="300">
               <div className="cta-paso-icon">📅</div>
               <p className="cta-paso-text">Si es para ti, eliges fechas y<br />reservas tu lugar.</p>
             </div>
           </div>
         </div>
-        <a href="/contacto" className="cta-final-btn">Agendar llamada gratuita</a>
+        <a href="/contacto" className="cta-final-btn" data-aos="zoom-in" data-aos-delay="400">Agendar llamada gratuita</a>
       </section>
 
       {/* MUY PRONTO 2026 */}
       <section className="muy-pronto">
         <div className="muy-pronto-container">
-          <h2 className="muy-pronto-title">Muy pronto<br /><em>2026</em></h2>
-          <div className="muy-pronto-card">
+          <h2 className="muy-pronto-title" data-aos="fade-up">Muy pronto<br /><em>2026</em></h2>
+          <div className="muy-pronto-card" data-aos="fade-up" data-aos-delay="150">
             <p className="muy-pronto-text">
               A partir de 2026 abriremos rutas estilo Backpacker entre Colombia y Panamá (ida y vuelta). Una opción más accesible, aventurera y perfecta para mujeres que quieren vivir el cruce del Caribe de forma auténtica, segura y acompañada por tripulación femenina.
             </p>
