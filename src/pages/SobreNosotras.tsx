@@ -106,35 +106,29 @@ const SobreNosotras = () => {
         </div>
       </section>
 
-      {/* NUESTROS BARCOS */}
+      {/* NUESTROS CATAMARANES */}
       <section className="nuestros-barcos">
         <div className="container">
-          <h2>Nuestros Barcos</h2>
-          <p>Contamos con dos barcos preparados para recorridos tranquilos y seguros:</p>
+          <h2>Nuestros catamaranes</h2>
+          <p>Actualmente operamos con catamaranes equipados para rutas tranquilas y seguras, con dos experiencias disponibles:</p>
 
           <div className="barcos-detalle">
             <div className="barco-item">
-              <div className="barco-imagen"></div>
               <div className="barco-info">
-                <h3>Barco Esencial</h3>
-                <p>Una experiencia íntima, femenina y accesible.</p>
+                <h3>Catamarán<br />Esencial</h3>
+                <p>Una experiencia íntima, cuidada y femenina con todo lo necesario para disfrutar San Blas con bienestar y tranquilidad.</p>
               </div>
             </div>
 
-            <div className="barco-item premium">
-              <div className="barco-imagen"></div>
+            <div className="barco-item">
               <div className="barco-info">
-                <h3>Barco Premium</h3>
+                <h3>Catamarán<br />Premium</h3>
                 <p>
-                  Para quienes buscan mayor comodidad, gastronomía fresca (incluye mariscos
-                  y langostas según temporada), detalles especiales y regalos únicos que hacen
-                  del viaje un recuerdo para siempre.
+                  Para quienes buscan mayor comodidad, gastronomía fresca (incluye mariscos y langostas según temporada), detalles especiales y regalos únicos que hacen del viaje un recuerdo para siempre.
                 </p>
               </div>
             </div>
           </div>
-
-          <a href="/contacto" className="btn-primary">Agenda tu llamada gratuita</a>
         </div>
       </section>
     </div>
