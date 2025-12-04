@@ -10,8 +10,8 @@ const SobreNosotras = () => {
       <section className="hero-sobre" style={{ backgroundImage: `url(${heroSobreImg})` }}>
         <div className="hero-sobre-overlay">
           <div className="container">
-            <h1>Somos mujeres creando experiencias únicas en el mar para mujeres extraordinarias.</h1>
-            <p className="subtitulo">
+            <h1 data-aos="fade-down">Somos mujeres creando experiencias únicas en el mar para mujeres extraordinarias.</h1>
+            <p className="subtitulo" data-aos="fade-up" data-aos-delay="200">
               Viajes seguros, conscientes y transformadores en uno de los lugares más
               hermosos del mundo.
             </p>
@@ -22,10 +22,10 @@ const SobreNosotras = () => {
       {/* NUESTRA ESENCIA */}
       <section className="nuestra-esencia">
         <div className="nuestra-esencia-content">
-          <div className="nuestra-esencia-imagen">
+          <div className="nuestra-esencia-imagen" data-aos="flip-up">
             <img src={nuestraEsenciaImg} alt="Nuestra esencia - Mujeres en barco" />
           </div>
-          <div className="nuestra-esencia-texto">
+          <div className="nuestra-esencia-texto" data-aos="fade-up" data-aos-delay="150">
             <h2>Nuestra Esencia</h2>
             <p>
               Ellas Navegan nació para ofrecer algo que las mujeres pocas veces tenemos:
@@ -66,10 +66,10 @@ const SobreNosotras = () => {
       {/* LA FUNDADORA */}
       <section className="fundadora">
         <div className="fundadora-content">
-          <div className="fundadora-imagen">
+          <div className="fundadora-imagen" data-aos="zoom-in">
             <img src={fundadoraImg} alt="Jessica Milagro - Fundadora" />
           </div>
-          <div className="fundadora-card">
+          <div className="fundadora-card" data-aos="fade-left" data-aos-delay="200">
             <h2>Fundadora — <em>Jessica Milagro</em></h2>
             <p>
               Con más de 6 años de experiencia navegando Mar Abierto en veleros y costeando en yates de lujo por el Caribe (Panamá, Colombia, Islas ABC, Bahamas, Martinica, República Dominicana, St. Marteen, St. Barth) y parte del Mediterráneo (Barcelona, Sur de Francia, Italia —Costa Siciliana— y Túnez).
@@ -135,7 +135,7 @@ const SobreNosotras = () => {
       {/* CTA FINAL */}
       <section className="cta-sobre">
         <div className="cta-sobre-container">
-          <div className="cta-sobre-card">
+          <div className="cta-sobre-card" data-aos="fade-up">
             <p>
               Este proyecto existe por y para mujeres que quieren vivir el mar desde otra energía: más clara, más suave y más auténtica. Si ya sentiste ese "esto es para mí", es porque lo es. El siguiente paso es simple: elegir la experiencia que va con tu momento.
             </p>
