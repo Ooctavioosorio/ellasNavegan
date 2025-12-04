@@ -131,6 +131,17 @@ const SobreNosotras = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA FINAL */}
+      <section className="cta-sobre">
+        <div className="cta-sobre-container">
+          <div className="cta-sobre-card">
+            <p>
+              Este proyecto existe por y para mujeres que quieren vivir el mar desde otra energía: más clara, más suave y más auténtica. Si ya sentiste ese "esto es para mí", es porque lo es. El siguiente paso es simple: elegir la experiencia que va con tu momento.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

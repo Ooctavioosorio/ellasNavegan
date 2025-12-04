@@ -367,6 +367,38 @@
   line-height: 1.7;
 }
 
+/* CTA SOBRE */
+.cta-sobre {
+  padding: 12rem 0;
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+}
+
+.cta-sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-sobre-card {
+  max-width: 800px;
+  background: transparent;
+  border: 1px solid #f4f1ed;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.cta-sobre-card p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-bg);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-sobre {
@@ -439,5 +471,13 @@
 
   .nuestra-esencia-texto h2 {
     font-size: 2rem;
+  }
+
+  .cta-sobre-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .cta-sobre-card p {
+    font-size: 1rem;
   }
 }
