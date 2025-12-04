@@ -86,33 +86,21 @@ const SobreNosotras = () => {
 
       {/* NUESTRO EQUIPO */}
       <section className="nuestro-equipo">
-        <div className="container">
-          <h2>Nuestro Equipo</h2>
-          <p>
-            Nuestro equipo está formado por mujeres que aman el mar y entienden a
-            profundidad su responsabilidad: acompañarte, cuidarte y asegurarse de que
-            vivas una experiencia tranquila y transformadora.
-          </p>
-          <p>
-            Cada capitana y cada tripulante aporta sensibilidad, experiencia y una
-            intención clara: <strong>hacer del mar un lugar seguro por y para nosotras.</strong>
+        <div className="nuestro-equipo-container">
+          <h2><em>Nuestro equipo</em></h2>
+          <p className="equipo-descripcion">
+            Nuestro equipo está formado por mujeres que aman el mar y entienden a profundidad su responsabilidad: acompañarte, cuidarte y asegurarse de que vivas una experiencia tranquila y transformadora. Cada capitana y cada tripulante aporta sensibilidad, experiencia y una intención clara: <strong>hacer del mar un lugar seguro por y para nosotras</strong>.
           </p>
           <div className="equipo-grid">
-            {/* Placeholder para fotos del equipo */}
             <div className="miembro-card">
               <div className="miembro-foto"></div>
-              <h4>Nombre</h4>
-              <p>Rol en el equipo</p>
+              <h4><em>Nombre</em></h4>
+              <p>Breve descripción de la capitana y sus preferencias personales en sus viajes.</p>
             </div>
             <div className="miembro-card">
               <div className="miembro-foto"></div>
-              <h4>Nombre</h4>
-              <p>Rol en el equipo</p>
-            </div>
-            <div className="miembro-card">
-              <div className="miembro-foto"></div>
-              <h4>Nombre</h4>
-              <p>Rol en el equipo</p>
+              <h4><em>Nombre</em></h4>
+              <p>Breve descripción de la capitana y sus preferencias personales en sus viajes.</p>
             </div>
           </div>
         </div>
