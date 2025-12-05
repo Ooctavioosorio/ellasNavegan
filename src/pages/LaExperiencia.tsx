@@ -90,10 +90,8 @@ const LaExperiencia = () => {
       {/* GALERÍA */}
       <section className="galeria">
         <div className="container">
-          <h2>Galería — Momentos Reales</h2>
-          <p className="galeria-intro">
-            Imágenes de mujeres en dinámicas, playas, rutas, atardeceres y vida en el barco.
-          </p>
+          <h2>Galería — <em>Momentos Reales</em></h2>
+
           <div className="galeria-grid">
             {/* Placeholders para imágenes */}
             <div className="galeria-item"></div>
@@ -103,16 +101,11 @@ const LaExperiencia = () => {
             <div className="galeria-item"></div>
             <div className="galeria-item"></div>
           </div>
-        </div>
-      </section>
 
-      {/* CTA FINAL */}
-      <section className="cta-experiencia">
-        <div className="container">
-          <p className="cta-texto">
+          <p className="galeria-intro">
             Si quieres vivir esta experiencia y reconectar con tu esencia en el mar, agenda tu llamada gratuita.
           </p>
-          <a href="/contacto" className="btn-primary btn-large">Agenda tu llamada gratuita</a>
+          <a href="/contacto" className="btn-galeria">Agendar aquí</a>
         </div>
       </section>
     </div>
