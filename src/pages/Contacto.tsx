@@ -1,30 +1,27 @@
 import './Contacto.css';
+import heroContactoImg from '../assets/images/heroContacto.png';
+import agendaLlamadaImg from '../assets/images/agendallamada.png';
 
 const Contacto = () => {
   return (
     <div className="contacto">
       {/* HERO */}
-      <section className="hero-contacto">
+      <section className="hero-contacto" style={{ backgroundImage: `url(${heroContactoImg})` }}>
         <div className="container">
           <h1>Hablemos sobre tu próximo viaje en el mar.</h1>
           <p className="subtitulo">
-            Si quieres conocer más sobre nuestras rutas, disponibilidad, barcos o cómo
-            funciona la experiencia, agenda una llamada directa con Jessica.
-            Es el espacio ideal para resolver dudas y saber si este viaje es perfecto para ti.
+            Si quieres conocer más sobre nuestras rutas, disponibilidad, barcos o cómo funciona la experiencia, agenda una llamada directa con Jessica. Es el espacio ideal para resolver dudas y saber si este viaje es perfecto para ti.
           </p>
         </div>
       </section>
 
       {/* AGENDA LLAMADA */}
       <section className="agenda-llamada">
-        <div className="container">
-          <h2>Agenda tu llamada gratuita</h2>
-          <div className="calendario-container">
-            {/* Aquí irá el widget de Calendly u otro servicio de agenda */}
-            <div className="calendario-placeholder">
-              <p>Widget de calendario</p>
-              <a href="#" className="btn-primary btn-large">Agendar llamada con Jessica</a>
-            </div>
+        <div className="agenda-llamada-card">
+          <img src={agendaLlamadaImg} alt="Agenda tu llamada" className="agenda-llamada-img" />
+          <div className="agenda-llamada-content">
+            <h2>Agenda tu llamada<br />gratuita</h2>
+            <a href="#" className="btn-agenda">Quiero ser una de ellas</a>
           </div>
         </div>
       </section>
