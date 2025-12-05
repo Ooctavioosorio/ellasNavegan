@@ -162,6 +162,17 @@ npm run preview
 - [x] **Sección CTA Final** - Fondo gradiente dorado, tarjeta con borde claro, texto centrado
 - [x] **Transiciones AOS en Sobre Nosotras** - Animaciones sutiles (fade-down, fade-up, zoom-in, fade-left)
 
+### Página La Experiencia (estilizada según Canva)
+- [x] **Sección Hero/Dinámicas** - Fondo beige, título gradiente, 3 cards con gradiente y borde dorado
+- [x] **Sección Por qué San Blas** - Imagen de fondo (escenarioperfecto.png), texto blanco, botón gradiente
+- [x] **Sección Qué te llevas** - Grid imagen + lista, tarjeta gradiente dorado, texto #77572c
+- [x] **Sección Galería** - Título gradiente, placeholders para imágenes, botón con borde gradiente
+- [x] **Transiciones AOS en La Experiencia** - fade-down, fade-up, zoom-in, fade-right, fade-left, flip-up
+
+### Imágenes utilizadas en La Experiencia (`src/assets/images/`)
+- `escenarioperfecto.png` - Fondo sección Por qué San Blas
+- `quetellevas.png` - Imagen sección Qué te llevas
+
 ### Imágenes utilizadas en Sobre Nosotras (`src/assets/images/`)
 - `mujeresCreandoExperiencia.png` - Hero Sobre Nosotras
 - `nuestaEsencia.png` - Sección Nuestra Esencia
@@ -182,7 +193,8 @@ npm run preview
 
 ### ⏳ Pendiente
 
-- [ ] Estilizar páginas La Experiencia y Contacto según Canva
+- [ ] Estilizar página Contacto según Canva
+- [ ] Agregar imágenes reales a sección Galería en La Experiencia
 - [ ] Integrar widget de calendario (Calendly u otro)
 - [ ] Agregar enlace real de WhatsApp
 - [ ] Configurar enlaces de redes sociales
@@ -277,4 +289,4 @@ El atributo `data-aos-delay` permite escalonar las animaciones (en ms).
 
 ---
 
-*Última actualización: 4 Diciembre 2025*
+*Última actualización: 5 Diciembre 2025*
