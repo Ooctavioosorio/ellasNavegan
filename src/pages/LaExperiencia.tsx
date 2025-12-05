@@ -3,21 +3,15 @@ import './LaExperiencia.css';
 const LaExperiencia = () => {
   return (
     <div className="la-experiencia">
-      {/* HERO */}
+      {/* HERO - DINÁMICAS */}
       <section className="hero-experiencia">
         <div className="container">
-          <h1>Dinámicas que viven las viajeras</h1>
+          <h1><em>Dinámicas</em> que<br />viven las viajeras</h1>
           <p className="intro">Durante la experiencia podrás encontrar:</p>
-        </div>
-      </section>
 
-      {/* DINÁMICAS */}
-      <section className="dinamicas">
-        <div className="container">
           <div className="dinamicas-grid">
-            {/* BIENESTAR & CALMA */}
             <div className="dinamica-card">
-              <h3>Bienestar & Calma</h3>
+              <h3><em>Bienestar<br />y calma</em></h3>
               <ul>
                 <li>Pausas guiadas</li>
                 <li>Respiración consciente</li>
@@ -27,9 +21,8 @@ const LaExperiencia = () => {
               </ul>
             </div>
 
-            {/* AVENTURA & NATURALEZA */}
             <div className="dinamica-card">
-              <h3>Aventura & Naturaleza</h3>
+              <h3><em>Aventura y<br />naturaleza</em></h3>
               <ul>
                 <li>Navegación entre islas remotas</li>
                 <li>Snorkel en aguas cristalinas</li>
@@ -39,9 +32,8 @@ const LaExperiencia = () => {
               </ul>
             </div>
 
-            {/* CONEXIÓN & COMUNIDAD */}
             <div className="dinamica-card">
-              <h3>Conexión & Comunidad</h3>
+              <h3><em>Conexión y<br />comunidad</em></h3>
               <ul>
                 <li>Conversaciones auténticas entre mujeres</li>
                 <li>Reflexión personal</li>
@@ -52,7 +44,7 @@ const LaExperiencia = () => {
           </div>
 
           <p className="nota-dinamicas">
-            Nada es obligatorio. Todo acompaña tu propio proceso.
+            <em>Nada es obligatorio. Todo acompaña tu propio proceso.</em>
           </p>
         </div>
       </section>

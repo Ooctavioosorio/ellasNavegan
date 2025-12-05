@@ -157,6 +157,10 @@ npm run preview
 - [x] **Sección Nuestra Esencia** - Fondo gradiente dorado, grid imagen + texto
 - [x] **Sección ¿Por qué solo para mujeres?** - Fondo beige, título con "mujeres" en itálica, botón CTA
 - [x] **Sección Fundadora** - Imagen ilustración + tarjeta con borde gradiente redondeado
+- [x] **Sección Nuestro Equipo** - Fondo #00383a, título blanco itálica, placeholders circulares para fotos
+- [x] **Sección Nuestros Catamaranes** - Fondo beige, 2 tarjetas con borde dorado, títulos gradiente itálica
+- [x] **Sección CTA Final** - Fondo gradiente dorado, tarjeta con borde claro, texto centrado
+- [x] **Transiciones AOS en Sobre Nosotras** - Animaciones sutiles (fade-down, fade-up, zoom-in, fade-left)
 
 ### Imágenes utilizadas en Sobre Nosotras (`src/assets/images/`)
 - `mujeresCreandoExperiencia.png` - Hero Sobre Nosotras
@@ -178,12 +182,12 @@ npm run preview
 
 ### ⏳ Pendiente
 
-- [ ] Continuar estilizando Sobre Nosotras (secciones: Nuestro Equipo, Nuestros Barcos)
 - [ ] Estilizar páginas La Experiencia y Contacto según Canva
 - [ ] Integrar widget de calendario (Calendly u otro)
 - [ ] Agregar enlace real de WhatsApp
 - [ ] Configurar enlaces de redes sociales
 - [ ] Footer según diseño Canva
+- [ ] Agregar fotos reales del equipo en sección Nuestro Equipo
 
 ---
 
@@ -273,4 +277,4 @@ El atributo `data-aos-delay` permite escalonar las animaciones (en ms).
 
 ---
 
-*Última actualización: 3 Diciembre 2025*
+*Última actualización: 4 Diciembre 2025*
