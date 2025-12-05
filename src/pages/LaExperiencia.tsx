@@ -1,4 +1,5 @@
 import './LaExperiencia.css';
+import escenarioPerfectoImg from '../assets/images/escenarioperfecto.png';
 
 const LaExperiencia = () => {
   return (
@@ -50,29 +51,16 @@ const LaExperiencia = () => {
       </section>
 
       {/* POR QUÉ SAN BLAS */}
-      <section className="por-que-san-blas">
+      <section className="por-que-san-blas" style={{ backgroundImage: `url(${escenarioPerfectoImg})` }}>
         <div className="container">
           <h2>Por qué San Blas es el escenario perfecto para transformarte</h2>
           <p>
-            San Blas es un paraíso natural que naturalmente inspira claridad, calma y
-            presencia: aguas transparentes, islas vírgenes, cielos abiertos y días sin ruido
-            que invitan a bajar el ritmo sin esfuerzo. Todo un paraíso.
+            San Blas es un paraíso natural que naturalmente inspira claridad, calma y presencia: aguas transparentes, islas vírgenes, cielos abiertos y días sin ruido que invitan a bajar el ritmo sin esfuerzo. Todo un paraíso.
           </p>
           <p>
-            Sus trayectos cortos y la navegación suave lo hacen ideal para mujeres que
-            buscan seguridad y tranquilidad, mientras que su entorno intacto potencia
-            cada momento de bienestar—desde yoga al amanecer y respiración frente al
-            mar, hasta caminatas en arena blanca y silencios que ordenan.
+            Sus trayectos cortos y la navegación suave lo hacen ideal para mujeres que buscan seguridad y tranquilidad, mientras que su entorno intacto potencia cada momento de bienestar—desde yoga al amanecer y respiración frente al mar, hasta caminatas en arena blanca y silencios que ordenan. La intimidad del archipiélago crea libertad emocional: un espacio donde las mujeres se abren, se sienten ellas mismas y conectan sin tensión. Entre snorkel, arrecifes vivos, playas remotas y la cultura Guna Yala, cada día sorprende y reconecta con lo esencial, ofreciendo un viaje suave, profundo y revitalizante.
           </p>
-          <p>
-            La intimidad del archipiélago crea libertad emocional: un espacio donde las mujeres se
-            abren, se sienten ellas mismas y conectan sin tensión.
-          </p>
-          <p>
-            Entre snorkel, arrecifes vivos, playas remotas y la cultura Guna Yala, cada día sorprende y reconecta
-            con lo esencial, ofreciendo un viaje suave, profundo y revitalizante.
-          </p>
-          <a href="/contacto" className="btn-primary">Hacer mi reserva</a>
+          <a href="/contacto" className="btn-san-blas">Hacer mi reserva</a>
         </div>
       </section>
 

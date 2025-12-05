@@ -117,23 +117,49 @@
 
 /* POR QUÉ SAN BLAS */
 .por-que-san-blas {
-  padding: 5rem 0;
-  background: var(--color-bg-light);
-  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 2rem;
+}
+
+.por-que-san-blas .container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .por-que-san-blas h2 {
-  max-width: 700px;
-  margin: 0 auto 2rem;
+  font-family: 'The Seasons', serif;
+  font-size: 3rem;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+  line-height: 1.3;
 }
 
 .por-que-san-blas p {
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-white);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
-.por-que-san-blas .btn-primary {
+.btn-san-blas {
+  display: inline-block;
   margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #f1efea;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-san-blas:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(183, 142, 81, 0.3);
 }
 
 /* QUÉ TE LLEVAS */
@@ -226,6 +252,10 @@
 
   .nota-dinamicas {
     font-size: 1.1rem;
+  }
+
+  .por-que-san-blas h2 {
+    font-size: 2.2rem;
   }
 
   .lista-llevas {
