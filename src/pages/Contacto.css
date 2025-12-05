@@ -191,18 +191,51 @@
 
 /* CIERRE */
 .cierre-contacto {
-  padding: 5rem 0;
-  background: var(--color-white);
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+}
+
+.cierre-contacto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cierre-contacto-card {
+  max-width: 800px;
+  background: transparent;
+  border: 1px solid #f1efea;
+  border-radius: 20px;
+  padding: 4rem 3rem;
   text-align: center;
 }
 
-.cierre-contacto p {
-  font-size: 1.2rem;
-  color: var(--color-text);
+.cierre-contacto-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #f1efea;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   line-height: 1.8;
-  font-style: italic;
+}
+
+.btn-suscribirse {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background: transparent;
+  border: 1px solid #f1efea;
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #f1efea;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-suscribirse:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* RESPONSIVE */
@@ -247,5 +280,17 @@
 
   .contacto-item h3 {
     font-size: 1.5rem;
+  }
+
+  .cierre-contacto {
+    padding: 5rem 1.5rem;
+  }
+
+  .cierre-contacto-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cierre-contacto-card p {
+    font-size: 1rem;
   }
 }

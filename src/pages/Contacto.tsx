@@ -84,12 +84,15 @@ const Contacto = () => {
 
       {/* CIERRE */}
       <section className="cierre-contacto">
-        <div className="container">
-          <p>
-            Si estás pensando en darte un espacio para ti, para respirar, para
-            desconectar del ruido y reconectar con tu esencia, aquí tienes un lugar
-            seguro para hacerlo.
-          </p>
+        <div className="cierre-contacto-container">
+          <div className="cierre-contacto-card">
+            <p>
+              Si estás pensando en darte un espacio para ti, para respirar, para
+              desconectar del ruido y reconectar con tu esencia, aquí tienes un lugar
+              seguro para hacerlo.
+            </p>
+            <a href="#" className="btn-suscribirse">Suscribirme</a>
+          </div>
         </div>
       </section>
     </div>
