@@ -191,15 +191,26 @@ npm run preview
 - `equiposybarcos.png` - Fondo sección Equipo y barcos
 - `elmarestalisto.png` - Imagen CTA Final
 
+### Página Contacto (estilizada según Canva)
+- [x] **Sección Hero** - Imagen de fondo (heroContacto.png), título gradiente 135deg, texto #e6cfae, posición bottom-center
+- [x] **Sección Agenda Llamada** - Imagen (agendallamada.png), título gradiente 135deg, botón gradiente dorado
+- [x] **Sección Otras Formas de Contacto** - Título gradiente 90deg, tarjeta #00383a con 3 cards internas, iconos blancos, botones con borde blanco
+- [x] **Sección Cierre** - Fondo gradiente 135deg dorado, tarjeta con borde #f1efea, botón suscribirse
+- [x] **Transiciones AOS en Contacto** - zoom-in, fade-down, fade-up con delays escalonados
+
+### Imágenes utilizadas en Contacto (`src/assets/images/`)
+- `heroContacto.png` - Hero Contacto
+- `agendallamada.png` - Sección Agenda Llamada
+
 ### ⏳ Pendiente
 
-- [ ] Estilizar página Contacto según Canva
 - [ ] Agregar imágenes reales a sección Galería en La Experiencia
 - [ ] Integrar widget de calendario (Calendly u otro)
 - [ ] Agregar enlace real de WhatsApp
 - [ ] Configurar enlaces de redes sociales
 - [ ] Footer según diseño Canva
 - [ ] Agregar fotos reales del equipo en sección Nuestro Equipo
+- [ ] Agregar enlace de suscripción en botón Suscribirme
 
 ---
 
