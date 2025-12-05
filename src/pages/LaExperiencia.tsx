@@ -1,5 +1,6 @@
 import './LaExperiencia.css';
 import escenarioPerfectoImg from '../assets/images/escenarioperfecto.png';
+import queTeLlevasImg from '../assets/images/quetellevas.png';
 
 const LaExperiencia = () => {
   return (
@@ -66,18 +67,23 @@ const LaExperiencia = () => {
 
       {/* QUÉ TE LLEVAS */}
       <section className="que-te-llevas">
-        <div className="container">
-          <h2>Qué te llevas</h2>
-          <ul className="lista-llevas">
-            <li>Días de descanso real</li>
-            <li>Fotos naturales que capturan momentos auténticos</li>
-            <li>Conversaciones que transforman</li>
-            <li>Aventura suave</li>
-            <li>Comunidad femenina</li>
-            <li>Memorias de un paraíso</li>
-            <li>Sensación de haber vuelto a ti</li>
-            <li>Regalos personalizados Ellas Navegan</li>
-          </ul>
+        <div className="que-te-llevas-card">
+          <div className="que-te-llevas-imagen">
+            <img src={queTeLlevasImg} alt="Qué te llevas" />
+          </div>
+          <div className="que-te-llevas-contenido">
+            <h2>Qué te llevas</h2>
+            <ul className="lista-llevas">
+              <li>Días de descanso real</li>
+              <li>Fotos naturales que capturan momentos auténticos</li>
+              <li>Conversaciones que transforman</li>
+              <li>Aventura suave</li>
+              <li>Comunidad femenina</li>
+              <li>Memorias de un paraíso</li>
+              <li>Sensación de haber vuelto a ti</li>
+              <li>Regalos personalizados Ellas Navegan</li>
+            </ul>
+          </div>
         </div>
       </section>
 
