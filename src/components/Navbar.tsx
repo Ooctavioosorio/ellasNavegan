@@ -36,7 +36,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <Link to="/contacto" className="navbar-cta">
+        <Link to="/contacto" className="navbar-cta u-bg-gradient-gold-135">
           Agenda llamada y reserva
         </Link>
       </div>

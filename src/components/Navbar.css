@@ -22,7 +22,7 @@
 }
 
 .logo-img {
-  height: 120px;
+  height: 7.5rem;
   width: auto;
   filter: brightness(0.6) saturate(1.2);
 }
@@ -39,7 +39,7 @@
   text-decoration: none;
   color: var(--color-menu-text);
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   transition: color 0.3s ease;
 }
@@ -51,13 +51,12 @@
 }
 
 .navbar-cta {
-  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
   color: #f1efea;
   padding: 0.85rem 1.75rem;
   border-radius: 8px;
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -75,7 +74,7 @@
   }
 
   .logo-img {
-    height: 50px;
+    height: 3.125rem;
   }
 
   .navbar-menu {
@@ -83,11 +82,11 @@
   }
 
   .navbar-menu a {
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
 
   .navbar-cta {
-    font-size: 11px;
+    font-size: 0.6875rem;
     padding: 0.7rem 1.25rem;
   }
 }

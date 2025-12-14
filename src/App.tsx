@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import SobreNosotras from './pages/SobreNosotras';
 import LaExperiencia from './pages/LaExperiencia';
@@ -23,6 +24,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <ScrollToTop />
         <Navbar />
         <main>
           <Routes>

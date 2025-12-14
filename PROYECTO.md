@@ -31,7 +31,8 @@ ellasNavegan/
 │   │   ├── Navbar.tsx        # Navegación principal
 │   │   ├── Navbar.css
 │   │   ├── Footer.tsx        # Pie de página
-│   │   └── Footer.css
+│   │   ├── Footer.css
+│   │   └── ScrollToTop.tsx    # Reset de scroll al navegar entre rutas
 │   ├── pages/
 │   │   ├── Home.tsx          # Página de inicio
 │   │   ├── Home.css
@@ -62,7 +63,19 @@ ellasNavegan/
 | `/la-experiencia` | LaExperiencia | Dinámicas, actividades, galería |
 | `/contacto` | Contacto | Formulario y datos de contacto |
 
+Al navegar entre rutas, el proyecto resetea el scroll al inicio mediante `ScrollToTop`.
+
 ---
+
+## Convenciones de Estilos
+
+- **Utilidades globales (marca):** se centralizaron gradientes reutilizables en `src/App.css`.
+  - `u-text-gradient-gold-90`
+  - `u-text-gradient-gold-135`
+  - `u-text-gradient-gold-135-brown`
+  - `u-bg-gradient-gold-135`
+- **Normalización de unidades:** se normalizaron valores sueltos de `px` a `rem` (equivalencia `1rem = 16px`) por componente/página para mejorar consistencia y accesibilidad.
+- **Scroll:** para evitar animación visible al navegar, `html { scroll-behavior: auto; }`.
 
 ## Paleta de Colores Oficial
 
@@ -197,6 +210,9 @@ npm run preview
 - [x] **Sección Otras Formas de Contacto** - Título gradiente 90deg, tarjeta #00383a con 3 cards internas, iconos blancos, botones con borde blanco
 - [x] **Sección Cierre** - Fondo gradiente 135deg dorado, tarjeta con borde #f1efea, botón suscribirse
 - [x] **Transiciones AOS en Contacto** - zoom-in, fade-down, fade-up con delays escalonados
+- [x] Utilidades globales para gradientes (reutilización en páginas y componentes)
+- [x] Normalización de unidades `px` -> `rem` (Navbar, Footer, Home, SobreNosotras, LaExperiencia, Contacto)
+- [x] Fix de scroll al navegar entre rutas (siempre inicia arriba)
 
 ### Imágenes utilizadas en Contacto (`src/assets/images/`)
 - `heroContacto.png` - Hero Contacto
@@ -300,4 +316,4 @@ El atributo `data-aos-delay` permite escalonar las animaciones (en ms).
 
 ---
 
-*Última actualización: 5 Diciembre 2025*
+*Última actualización: 14 Diciembre 2025*

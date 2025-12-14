@@ -10,7 +10,7 @@ const SobreNosotras = () => {
       <section className="hero-sobre" style={{ backgroundImage: `url(${heroSobreImg})` }}>
         <div className="hero-sobre-overlay">
           <div className="container">
-            <h1 data-aos="fade-down">Somos mujeres creando experiencias únicas en el mar para mujeres extraordinarias.</h1>
+            <h1 className="u-text-gradient-gold-135" data-aos="fade-down">Somos mujeres creando experiencias únicas en el mar para mujeres extraordinarias.</h1>
             <p className="subtitulo" data-aos="fade-up" data-aos-delay="200">
               Viajes seguros, conscientes y transformadores en uno de los lugares más
               hermosos del mundo.
@@ -20,13 +20,13 @@ const SobreNosotras = () => {
       </section>
 
       {/* NUESTRA ESENCIA */}
-      <section className="nuestra-esencia">
+      <section className="nuestra-esencia u-bg-gradient-gold-135">
         <div className="nuestra-esencia-content">
           <div className="nuestra-esencia-imagen" data-aos="flip-up">
             <img src={nuestraEsenciaImg} alt="Nuestra esencia - Mujeres en barco" />
           </div>
           <div className="nuestra-esencia-texto" data-aos="fade-up" data-aos-delay="150">
-            <h2>Nuestra Esencia</h2>
+            <h2 className="u-text-gradient-gold-90">Nuestra Esencia</h2>
             <p>
               Ellas Navegan nació para ofrecer algo que las mujeres pocas veces tenemos:
               un espacio seguro en el mar donde podamos viajar sin tensión, sin
@@ -49,7 +49,7 @@ const SobreNosotras = () => {
       {/* POR QUÉ SOLO PARA MUJERES */}
       <section className="por-que-mujeres">
         <div className="container">
-          <h2>¿Por qué solo para <em>mujeres</em>?</h2>
+          <h2 className="u-text-gradient-gold-90">¿Por qué solo para <em>mujeres</em>?</h2>
           <p>
             Porque la energía cambia. Cuando el grupo es femenino, surge un nivel de libertad emocional, seguridad y autenticidad que permite que cada mujer viaje sin máscaras.
           </p>
@@ -59,7 +59,7 @@ const SobreNosotras = () => {
           <p>
             Esto no es un detalle. Es el corazón de Ellas Navegan
           </p>
-          <a href="/contacto" className="btn-mujeres">Quiero ser una de ellas</a>
+          <a href="#" className="btn-mujeres u-bg-gradient-gold-135">Quiero ser una de ellas</a>
         </div>
       </section>
 
@@ -70,7 +70,7 @@ const SobreNosotras = () => {
             <img src={fundadoraImg} alt="Jessica Milagro - Fundadora" />
           </div>
           <div className="fundadora-card" data-aos="fade-left" data-aos-delay="200">
-            <h2>Fundadora — <em>Jessica Milagro</em></h2>
+            <h2 className="u-text-gradient-gold-90">Fundadora — <em>Jessica Milagro</em></h2>
             <p>
               Con más de 6 años de experiencia navegando Mar Abierto en veleros y costeando en yates de lujo por el Caribe (Panamá, Colombia, Islas ABC, Bahamas, Martinica, República Dominicana, St. Marteen, St. Barth) y parte del Mediterráneo (Barcelona, Sur de Francia, Italia —Costa Siciliana— y Túnez).
             </p>
@@ -109,20 +109,20 @@ const SobreNosotras = () => {
       {/* NUESTROS CATAMARANES */}
       <section className="nuestros-barcos">
         <div className="container">
-          <h2>Nuestros catamaranes</h2>
+          <h2 className="u-text-gradient-gold-90">Nuestros catamaranes</h2>
           <p>Actualmente operamos con catamaranes equipados para rutas tranquilas y seguras, con dos experiencias disponibles:</p>
 
           <div className="barcos-detalle">
             <div className="barco-item">
               <div className="barco-info">
-                <h3>Catamarán<br />Esencial</h3>
+                <h3 className="u-text-gradient-gold-90">Catamarán<br />Esencial</h3>
                 <p>Una experiencia íntima, cuidada y femenina con todo lo necesario para disfrutar San Blas con bienestar y tranquilidad.</p>
               </div>
             </div>
 
             <div className="barco-item">
               <div className="barco-info">
-                <h3>Catamarán<br />Premium</h3>
+                <h3 className="u-text-gradient-gold-90">Catamarán<br />Premium</h3>
                 <p>
                   Para quienes buscan mayor comodidad, gastronomía fresca (incluye mariscos y langostas según temporada), detalles especiales y regalos únicos que hacen del viaje un recuerdo para siempre.
                 </p>
@@ -133,7 +133,7 @@ const SobreNosotras = () => {
       </section>
 
       {/* CTA FINAL */}
-      <section className="cta-sobre">
+      <section className="cta-sobre u-bg-gradient-gold-135">
         <div className="cta-sobre-container">
           <div className="cta-sobre-card" data-aos="fade-up">
             <p>

@@ -21,12 +21,12 @@ const Home = () => {
         <div className="hero-container">
           <div className="hero-content" data-aos="fade-right" data-aos-delay="100">
             <h1 className="hero-title">
-              <span className="hero-title-light">Viajes exclusivos en</span>
+              <span className="hero-title-light u-text-gradient-gold-135-brown">Viajes exclusivos en</span>
               <br />
-              <span className="hero-title-light">barco para </span>
-              <span className="hero-title-bold">mujeres en</span>
+              <span className="hero-title-light u-text-gradient-gold-135-brown">barco para </span>
+              <span className="hero-title-bold u-text-gradient-gold-135-brown">mujeres en</span>
               <br />
-              <span className="hero-title-bold">San Blas, Panamá.</span>
+              <span className="hero-title-bold u-text-gradient-gold-135-brown">San Blas, Panamá.</span>
             </h1>
             <p className="hero-subtitle">
               Experiencias pensadas por y para mujeres que buscan una pausa
@@ -34,7 +34,7 @@ const Home = () => {
               Caribe. Rutas guiadas para soltar la autoexigencia, bajar el ritmo
               y reconectar contigo en un entorno seguro y femenino.
             </p>
-            <a href="/contacto" className="hero-cta">Agendar llamada gratuita</a>
+            <a href="#" className="hero-cta u-bg-gradient-gold-135">Agendar llamada gratuita</a>
           </div>
           <div className="hero-image" data-aos="fade-left" data-aos-delay="300">
             <img src={heroImage} alt="Mujer disfrutando en barco en San Blas" className="hero-img" />
@@ -49,11 +49,11 @@ const Home = () => {
             <img src={hero2Image} alt="Mujeres disfrutando en el barco" className="quienes-somos-img" />
           </div>
           <div className="quienes-somos-content" data-aos="fade-left" data-aos-delay="200">
-            <h2 className="quienes-somos-title">¿Quienes<br />somos?</h2>
+            <h2 className="quienes-somos-title u-text-gradient-gold-90">¿Quienes<br />somos?</h2>
             <p className="quienes-somos-text">
               Ellas Navegan es una agencia especializada en rutas marítimas por <strong>San Blas</strong>, creada para mujeres que necesitan desconectar de la rutina, respirar lejos de la exigencia diaria y constante y vivir el mar desde un lugar auténtico, cuidado, seguro y profundamente humano.
             </p>
-            <h3 className="quienes-somos-subtitle">No es un tour</h3>
+            <h3 className="quienes-somos-subtitle u-text-gradient-gold-90">No es un tour</h3>
             <p className="quienes-somos-text">
               Una experiencia creada desde la mirada femenina: bienestar, aventura, desconexión y seguridad entre mujeres con ritmos y visiones afines. Cada viaje es liderado por <strong>Jessica Milagro</strong>, marinera con más de 6 años navegando, junto a un equipo mayoritariamente femenino que cuida cada detalle para que te sientas tranquila: higiene impecable, logística clara, espacios cómodos y dinámicas que acompañan sin presión.
             </p>
@@ -64,7 +64,7 @@ const Home = () => {
       {/* LA EXPERIENCIA A BORDO */}
       <section className="experiencia-bordo">
         <div className="experiencia-bordo-container">
-          <h2 className="experiencia-bordo-title" data-aos="fade-up">La experiencia <em>a bordo</em></h2>
+          <h2 className="experiencia-bordo-title u-text-gradient-gold-90" data-aos="fade-up">La experiencia <em>a bordo</em></h2>
           <p className="experiencia-bordo-subtitle" data-aos="fade-up" data-aos-delay="100">
             Nuestras rutas recorren distintas islas del archipiélago, combinando el paraíso
             de San Blas, Panama, playas vírgenes, bienestar y dinámicas especiales.
@@ -161,7 +161,7 @@ const Home = () => {
               Y lo más mágico es que todo sucede despacio, sin ruido y sin exigencias. La vida corre diferente: el mar marca el tiempo, la naturaleza te sostiene y la energía femenina que se crea entre nosotras transforma el viaje en algo más que un escape… se vuelve un recordatorio de quién eres cuando te das permiso de simplemente SER.
             </p>
           </div>
-          <a href="/la-experiencia" className="san-blas-btn">Saber más</a>
+          <a href="#" className="san-blas-btn u-bg-gradient-gold-135">Saber más</a>
         </div>
       </section>
 
@@ -169,11 +169,11 @@ const Home = () => {
       <section className="para-quien">
         <div className="para-quien-container">
           <div className="para-quien-left" data-aos="fade-right">
-            <h2 className="para-quien-title">¿Para quién es<br />este viaje?</h2>
+            <h2 className="para-quien-title u-text-gradient-gold-90">¿Para quién es<br />este viaje?</h2>
           </div>
           <div className="para-quien-right" data-aos="fade-left" data-aos-delay="200">
             <div className="para-quien-card">
-              <h3 className="para-quien-subtitle">Esta experiencia es para mujeres que:</h3>
+              <h3 className="para-quien-subtitle u-text-gradient-gold-90">Esta experiencia es para mujeres que:</h3>
               <ul className="para-quien-lista">
                 <li>Necesitan un descanso real del ritmo que siempre exige más.</li>
                 <li>Buscan claridad, equilibrio y un espacio para respirar distinto.</li>
@@ -183,7 +183,7 @@ const Home = () => {
                 <li>Quieren aventura, pero sin renunciar al bienestar.</li>
               </ul>
               <p className="para-quien-cierre"><strong>Si te resuena viajar con propósito, este espacio es para ti.</strong></p>
-              <a href="/contacto" className="para-quien-btn">Haz una reserva</a>
+              <a href="#" className="para-quien-btn">Haz una reserva</a>
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <a href="/contacto" className="cta-final-btn" data-aos="zoom-in" data-aos-delay="400">Agendar llamada gratuita</a>
+        <a href="#" className="cta-final-btn u-bg-gradient-gold-135" data-aos="zoom-in" data-aos-delay="400">Agendar llamada gratuita</a>
       </section>
 
       {/* MUY PRONTO 2026 */}

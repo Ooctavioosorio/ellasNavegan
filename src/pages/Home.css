@@ -1,16 +1,10 @@
 .home {
-  padding-top: 90px; /* Espacio para navbar fijo */
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  padding-top: 5.625rem; /* Espacio para navbar fijo */
 }
 
 /* HERO */
 .hero {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 6.25rem);
   display: flex;
   align-items: center;
   background: var(--color-bg);
@@ -18,7 +12,7 @@
 }
 
 .hero-container {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -28,50 +22,41 @@
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.15;
   margin-bottom: 1.5rem;
 }
 
 .hero-title-light {
   font-weight: 300;
-  background: linear-gradient(135deg, #b78e51, #654e2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .hero-title-bold {
   font-weight: 600;
-  background: linear-gradient(135deg, #b78e51, #654e2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .hero-subtitle {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-menu-text);
   line-height: 1.7;
   margin-bottom: 2rem;
-  max-width: 520px;
+  max-width: 32.5rem;
 }
 
 .hero-cta {
   display: inline-block;
-  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
   color: #f1efea;
   padding: 1rem 2rem;
   border-radius: 8px;
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -90,45 +75,8 @@
 
 .hero-img {
   width: 100%;
-  max-width: 580px;
+  max-width: 36.25rem;
   height: auto;
-}
-
-/* BOTONES */
-.btn-primary {
-  display: inline-block;
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-  background: var(--color-primary-dark);
-}
-
-.btn-primary.btn-large {
-  padding: 1.25rem 2.5rem;
-  font-size: 1.1rem;
-}
-
-.btn-secondary {
-  display: inline-block;
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn-secondary:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
 }
 
 /* SECCIONES GENERALES */
@@ -155,7 +103,7 @@ section p {
 }
 
 .quienes-somos-container {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -170,38 +118,30 @@ section p {
 
 .quienes-somos-img {
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
   height: auto;
 }
 
 .quienes-somos-content {
-  max-width: 550px;
+  max-width: 34.375rem;
 }
 
 .quienes-somos-title {
   font-family: var(--font-heading);
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #b78e51, #654e2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .quienes-somos-subtitle {
   font-family: var(--font-heading);
-  font-size: 32px;
+  font-size: 2rem;
   margin: 2rem 0 1rem;
-  background: linear-gradient(90deg, #b78e51, #654e2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .quienes-somos-text {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--color-menu-text);
   line-height: 1.7;
   margin-bottom: 1rem;
@@ -219,19 +159,15 @@ section p {
 }
 
 .experiencia-bordo-container {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
   text-align: center;
 }
 
 .experiencia-bordo-title {
   font-family: var(--font-heading);
-  font-size: 48px;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #b78e51, #654e2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .experiencia-bordo-title em {
@@ -240,10 +176,10 @@ section p {
 
 .experiencia-bordo-subtitle {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--color-menu-text);
   line-height: 1.7;
-  max-width: 600px;
+  max-width: 37.5rem;
   margin: 0 auto 3rem;
 }
 
@@ -274,7 +210,7 @@ section p {
 
 .experiencia-card-image img {
   width: 100%;
-  height: 340px;
+  height: 21.25rem;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -293,14 +229,14 @@ section p {
 
 .experiencia-card-label {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--color-white);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .experiencia-card-number {
   font-family: var(--font-heading);
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--color-white);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -314,7 +250,7 @@ section p {
 
 .experiencia-card-content p {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--color-menu-text);
   line-height: 1.5;
   margin: 0;
@@ -322,15 +258,15 @@ section p {
 }
 
 .experiencia-card-arrow {
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
   border: 1px solid var(--color-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-primary);
-  font-size: 16px;
+  font-size: 1rem;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
@@ -347,7 +283,7 @@ section p {
 }
 
 .para-quien-container {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -363,13 +299,9 @@ section p {
 
 .para-quien-title {
   font-family: var(--font-heading);
-  font-size: 56px;
+  font-size: 3.5rem;
   line-height: 1.1;
   font-style: italic;
-  background: linear-gradient(90deg, #b78e51, #654e2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .para-quien-right {
@@ -382,7 +314,7 @@ section p {
   border: 3px solid transparent;
   border-radius: 20px;
   padding: 3rem;
-  max-width: 600px;
+  max-width: 37.5rem;
   background-image: linear-gradient(var(--color-bg), var(--color-bg)), linear-gradient(90deg, #b78e51, #654e2b);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -390,12 +322,8 @@ section p {
 
 .para-quien-subtitle {
   font-family: var(--font-heading);
-  font-size: 26px;
+  font-size: 1.625rem;
   margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #b78e51, #654e2b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .para-quien-lista {
@@ -408,7 +336,7 @@ section p {
   padding: 0.5rem 0;
   color: var(--color-menu-text);
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.6;
 }
 
@@ -418,7 +346,7 @@ section p {
 
 .para-quien-cierre {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--color-menu-text);
   margin: 1.5rem 0;
 }
@@ -436,7 +364,7 @@ section p {
   border-radius: 30px;
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   transition: all 0.3s ease;
   margin-top: 1rem;
@@ -462,7 +390,7 @@ section p {
 }
 
 .san-blas-container {
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -472,7 +400,7 @@ section p {
 
 .san-blas-title {
   font-family: var(--font-heading);
-  font-size: 72px;
+  font-size: 4.5rem;
   color: var(--color-white);
   margin-bottom: 2rem;
   font-style: italic;
@@ -482,13 +410,13 @@ section p {
   background: rgba(0, 80, 90, 0.5);
   padding: 2.5rem 3rem;
   border-radius: 8px;
-  max-width: 1000px;
+  max-width: 62.5rem;
   margin-bottom: 2rem;
 }
 
 .san-blas-overlay p {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-white);
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -500,13 +428,12 @@ section p {
 
 .san-blas-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
   color: #623e2a;
   padding: 1rem 3rem;
   border-radius: 8px;
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s ease;
   margin-top: 1rem;
@@ -522,7 +449,7 @@ section p {
   position: absolute;
   top: 8%;
   right: 2%;
-  width: 400px;
+  width: 25rem;
   height: auto;
   pointer-events: none;
   z-index: 2;
@@ -542,7 +469,7 @@ section p {
 }
 
 .equipo-barcos-container {
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -552,7 +479,7 @@ section p {
 
 .equipo-barcos-title {
   font-family: var(--font-heading);
-  font-size: 72px;
+  font-size: 4.5rem;
   color: var(--color-bg);
   margin-bottom: 1.5rem;
   line-height: 1.1;
@@ -564,10 +491,10 @@ section p {
 
 .equipo-barcos-subtitle {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-bg);
   line-height: 1.8;
-  max-width: 700px;
+  max-width: 43.75rem;
   margin-bottom: 3rem;
 }
 
@@ -576,7 +503,7 @@ section p {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%;
-  max-width: 900px;
+  max-width: 56.25rem;
 }
 
 .barco-card {
@@ -592,21 +519,21 @@ section p {
 }
 
 .barco-card-icon img {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   object-fit: contain;
 }
 
 .barco-card-title {
   font-family: var(--font-heading);
-  font-size: 28px;
+  font-size: 1.75rem;
   color: var(--color-bg);
   margin-bottom: 1rem;
 }
 
 .barco-card-text {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--color-bg);
   line-height: 1.6;
 }
@@ -621,7 +548,7 @@ section p {
   padding: 0.3rem 0;
   color: var(--color-bg);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -633,7 +560,7 @@ section p {
   position: absolute;
   top: 28%;
   left: 8%;
-  width: 300px;
+  width: 18.75rem;
   height: auto;
   pointer-events: none;
   z-index: 2;
@@ -647,7 +574,7 @@ section p {
 }
 
 .cta-final-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -675,7 +602,7 @@ section p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--font-heading);
-  font-size: 48px;
+  font-size: 3rem;
   color: var(--color-white);
   text-align: center;
   font-style: italic;
@@ -698,20 +625,20 @@ section p {
 }
 
 .cta-paso-icon {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   border: 2px solid var(--color-menu-text);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .cta-paso-text {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-menu-text);
   line-height: 1.5;
   margin: 0;
@@ -719,13 +646,12 @@ section p {
 
 .cta-final-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
   color: var(--color-bg);
   padding: 1rem 3rem;
   border-radius: 8px;
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -743,14 +669,14 @@ section p {
 }
 
 .muy-pronto-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   text-align: center;
 }
 
 .muy-pronto-title {
   font-family: var(--font-heading);
-  font-size: 72px;
+  font-size: 4.5rem;
   color: var(--color-bg);
   margin-bottom: 3rem;
   line-height: 1.1;
@@ -765,13 +691,13 @@ section p {
   border: 1px solid var(--color-bg);
   border-radius: 16px;
   padding: 3rem 4rem;
-  max-width: 900px;
+  max-width: 56.25rem;
   margin: 0 auto;
 }
 
 .muy-pronto-text {
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--color-bg);
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -779,7 +705,7 @@ section p {
 
 .muy-pronto-firma {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--color-bg);
   margin: 0;
 }
