@@ -318,8 +318,24 @@
     font-size: 1.1rem;
   }
 
+  .por-que-san-blas .container {
+    text-align: center;
+  }
+
   .por-que-san-blas h2 {
     font-size: 2.2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .por-que-san-blas p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-san-blas {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .que-te-llevas-card {

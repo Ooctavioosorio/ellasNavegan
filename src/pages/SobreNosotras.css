@@ -155,11 +155,11 @@
 
 .fundadora-imagen {
   flex-shrink: 0;
-  margin-left: -9.375rem;
+  margin-left: -5.625rem;
 }
 
 .fundadora-imagen img {
-  width: 43.75rem;
+  width: 32.5rem;
   height: auto;
 }
 
@@ -395,17 +395,25 @@
   }
 
   .fundadora-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
     padding: 0 1.5rem;
   }
 
   .fundadora-imagen {
     max-width: 17.5rem;
+    width: 100%;
     margin: 0 auto;
   }
 
+  .fundadora-imagen img {
+    width: 100%;
+    height: auto;
+  }
+
   .fundadora-card {
+    width: 100%;
     padding: 1.5rem;
   }
 
