@@ -213,6 +213,9 @@ npm run preview
 - [x] Utilidades globales para gradientes (reutilización en páginas y componentes)
 - [x] Normalización de unidades `px` -> `rem` (Navbar, Footer, Home, SobreNosotras, LaExperiencia, Contacto)
 - [x] Fix de scroll al navegar entre rutas (siempre inicia arriba)
+- [x] Mejoras de navegación móvil (menú hamburguesa con overlay/drawer)
+- [x] Ajustes responsive **compact/premium** en mobile (reducción de paddings verticales y tamaños/alturas de imágenes para disminuir scroll)
+- [x] Tipografía fluida en mobile para títulos principales (`clamp()` en H1/H2) en Home, SobreNosotras, LaExperiencia y Contacto
 
 ### Imágenes utilizadas en Contacto (`src/assets/images/`)
 - `heroContacto.png` - Hero Contacto
@@ -316,4 +319,4 @@ El atributo `data-aos-delay` permite escalonar las animaciones (en ms).
 
 ---
 
-*Última actualización: 14 Diciembre 2025*
+*Última actualización: 15 Diciembre 2025*

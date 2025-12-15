@@ -383,15 +383,27 @@
 
   .hero-sobre-overlay {
     min-height: 60vh;
-    padding: 4rem 1.5rem;
+    padding: 3.5rem 1.25rem;
   }
 
   .hero-sobre h1 {
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 5vw, 2rem);
   }
 
   .hero-sobre .subtitulo {
     font-size: 1rem;
+  }
+
+  .nuestra-esencia,
+  .por-que-mujeres,
+  .fundadora,
+  .nuestro-equipo,
+  .nuestros-barcos {
+    padding: 3.5rem 0;
+  }
+
+  .cta-sobre {
+    padding: 7rem 0;
   }
 
   .fundadora-content {
@@ -418,11 +430,11 @@
   }
 
   .fundadora-card h2 {
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 5vw, 1.95rem);
   }
 
   .nuestros-barcos h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 5.5vw, 2.3rem);
   }
 
   .barcos-detalle {
@@ -439,7 +451,7 @@
   }
 
   .nuestro-equipo h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 5.5vw, 2.3rem);
   }
 
   .equipo-grid {
@@ -454,7 +466,7 @@
   }
 
   .nuestra-esencia-texto h2 {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 5.5vw, 2.15rem);
   }
 
   .cta-sobre-card {

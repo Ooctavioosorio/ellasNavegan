@@ -229,11 +229,11 @@
 @media (max-width: 768px) {
   .hero-contacto {
     min-height: 60vh;
-    padding: 4rem 1.5rem;
+    padding: 3.5rem 1.25rem;
   }
 
   .hero-contacto h1 {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 6vw, 2.2rem);
   }
 
   .hero-contacto .subtitulo {
@@ -241,11 +241,11 @@
   }
 
   .agenda-llamada {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
   }
 
   .agenda-llamada-content h2 {
-    font-size: 2rem;
+    font-size: clamp(1.7rem, 6vw, 2.2rem);
   }
 
   .btn-agenda {
@@ -253,8 +253,12 @@
     font-size: 0.9rem;
   }
 
+  .otras-formas {
+    padding: 3.5rem 1.25rem;
+  }
+
   .otras-formas h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.85rem, 6vw, 2.35rem);
   }
 
   .otras-formas-card {
@@ -270,7 +274,7 @@
   }
 
   .cierre-contacto {
-    padding: 5rem 1.5rem;
+    padding: 4.5rem 1.25rem;
   }
 
   .cierre-contacto-card {

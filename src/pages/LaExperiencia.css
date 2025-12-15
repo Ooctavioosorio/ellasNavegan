@@ -302,12 +302,20 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .hero-experiencia {
+    padding: 4.5rem 1.5rem 5.5rem;
+  }
+
   .hero-experiencia h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 6vw, 2.6rem);
   }
 
   .dinamicas-grid {
     grid-template-columns: 1fr;
+  }
+
+  .dinamica-card {
+    padding: 2rem 1.5rem;
   }
 
   .dinamica-card h3 {
@@ -318,12 +326,16 @@
     font-size: 1.1rem;
   }
 
+  .por-que-san-blas {
+    padding: 4.5rem 1.5rem;
+  }
+
   .por-que-san-blas .container {
     text-align: center;
   }
 
   .por-que-san-blas h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 5.5vw, 2.3rem);
     margin-left: auto;
     margin-right: auto;
   }
@@ -336,6 +348,14 @@
   .btn-san-blas {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .que-te-llevas {
+    padding: 3rem 1.5rem;
+  }
+
+  .galeria {
+    padding: 3.5rem 1.5rem;
   }
 
   .que-te-llevas-card {
@@ -352,11 +372,11 @@
   }
 
   .que-te-llevas-contenido h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 5.5vw, 2.3rem);
   }
 
   .galeria h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 5.5vw, 2.3rem);
   }
 
   .galeria-grid {
