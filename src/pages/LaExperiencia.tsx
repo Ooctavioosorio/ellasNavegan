@@ -1,8 +1,35 @@
 import './LaExperiencia.css';
 import escenarioPerfectoImg from '../assets/images/escenarioperfecto.png';
 import queTeLlevasImg from '../assets/images/quetellevas.png';
+import galeria8502 from '../assets/images/galeria/IMG_8502.jpg';
+import galeria8503 from '../assets/images/galeria/IMG_8503.jpg';
+import galeria8504 from '../assets/images/galeria/IMG_8504.jpg';
+import galeria8505 from '../assets/images/galeria/IMG_8505.jpg';
+import galeria8506 from '../assets/images/galeria/IMG_8506.jpg';
+import galeria8507 from '../assets/images/galeria/IMG_8507.jpg';
+import galeria8508 from '../assets/images/galeria/IMG_8508.jpg';
+import galeria8509 from '../assets/images/galeria/IMG_8509.jpg';
+import galeria8510 from '../assets/images/galeria/IMG_8510.jpg';
+import galeria8511 from '../assets/images/galeria/IMG_8511.jpg';
+import galeria8512 from '../assets/images/galeria/IMG_8512.jpg';
+import galeria8513 from '../assets/images/galeria/IMG_8513.jpg';
 
 const LaExperiencia = () => {
+  const galeriaImagenes = [
+    galeria8502,
+    galeria8503,
+    galeria8504,
+    galeria8505,
+    galeria8506,
+    galeria8507,
+    galeria8508,
+    galeria8509,
+    galeria8510,
+    galeria8511,
+    galeria8512,
+    galeria8513,
+  ];
+
   return (
     <div className="la-experiencia">
       {/* HERO - DINÁMICAS */}
@@ -93,13 +120,16 @@ const LaExperiencia = () => {
           <h2 className="u-text-gradient-gold-90" data-aos="fade-down">Galería — <em>Momentos Reales</em></h2>
 
           <div className="galeria-grid">
-            {/* Placeholders para imágenes */}
-            <div className="galeria-item" data-aos="flip-up" data-aos-delay="0"></div>
-            <div className="galeria-item" data-aos="flip-up" data-aos-delay="100"></div>
-            <div className="galeria-item" data-aos="flip-up" data-aos-delay="200"></div>
-            <div className="galeria-item" data-aos="flip-up" data-aos-delay="300"></div>
-            <div className="galeria-item" data-aos="flip-up" data-aos-delay="400"></div>
-            <div className="galeria-item" data-aos="flip-up" data-aos-delay="500"></div>
+            {galeriaImagenes.map((src, idx) => (
+              <div
+                key={src}
+                className="galeria-item"
+                data-aos="flip-up"
+                data-aos-delay={idx * 100}
+              >
+                <img src={src} alt={`Galería Ellas Navegan ${idx + 1}`} loading="lazy" />
+              </div>
+            ))}
           </div>
 
           <p className="galeria-intro" data-aos="fade-up">
