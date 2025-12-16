@@ -1,4 +1,5 @@
 import './LaExperiencia.css';
+import { useEffect, useState } from 'react';
 import escenarioPerfectoImg from '../assets/images/escenarioperfecto.png';
 import queTeLlevasImg from '../assets/images/quetellevas.png';
 import galeria8502 from '../assets/images/galeria/IMG_8502.jpg';
@@ -29,6 +30,28 @@ const LaExperiencia = () => {
     galeria8512,
     galeria8513,
   ];
+
+  const [imagenActivaIdx, setImagenActivaIdx] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (imagenActivaIdx === null) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setImagenActivaIdx(null);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [imagenActivaIdx]);
+
+  useEffect(() => {
+    if (imagenActivaIdx === null) return;
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [imagenActivaIdx]);
 
   return (
     <div className="la-experiencia">
@@ -127,7 +150,14 @@ const LaExperiencia = () => {
                 data-aos="flip-up"
                 data-aos-delay={idx * 100}
               >
-                <img src={src} alt={`Galería Ellas Navegan ${idx + 1}`} loading="lazy" />
+                <button
+                  type="button"
+                  className="galeria-btn"
+                  onClick={() => setImagenActivaIdx(idx)}
+                  aria-label={`Ver imagen ${idx + 1} en grande`}
+                >
+                  <img src={src} alt={`Galería Ellas Navegan ${idx + 1}`} loading="lazy" />
+                </button>
               </div>
             ))}
           </div>
@@ -138,6 +168,34 @@ const LaExperiencia = () => {
           <a href="#" className="btn-galeria" data-aos="fade-up" data-aos-delay="100">Agendar aquí</a>
         </div>
       </section>
+
+      {imagenActivaIdx !== null && (
+        <div
+          className="galeria-lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Imagen ampliada"
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setImagenActivaIdx(null);
+          }}
+        >
+          <button
+            type="button"
+            className="galeria-lightbox-close"
+            onClick={() => setImagenActivaIdx(null)}
+            aria-label="Cerrar"
+          >
+            ×
+          </button>
+
+          <div className="galeria-lightbox-content">
+            <img
+              src={galeriaImagenes[imagenActivaIdx]}
+              alt={`Galería Ellas Navegan ${imagenActivaIdx + 1}`}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

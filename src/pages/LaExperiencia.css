@@ -271,12 +271,80 @@
   position: relative;
 }
 
+.galeria-btn {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.galeria-btn:focus-visible {
+  outline: 2px solid rgba(183, 142, 81, 0.9);
+  outline-offset: 3px;
+}
+
 .galeria-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+.galeria-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.galeria-lightbox-content {
+  width: auto;
+  max-width: 92vw;
+  max-height: 86vh;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.galeria-lightbox-content img {
+  width: auto;
+  height: auto;
+  max-width: 92vw;
+  max-height: 86vh;
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.galeria-lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.galeria-lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.galeria-lightbox-close:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
 }
 
 .galeria-intro {
