@@ -250,29 +250,35 @@ section p {
 
 .experiencia-card-content p {
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   color: var(--color-menu-text);
-  line-height: 1.5;
+  line-height: 1.45;
   margin: 0;
   flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
 }
 
 .experiencia-card-arrow {
   width: 2.25rem;
   height: 2.25rem;
-  border: 1px solid var(--color-primary);
+  background: linear-gradient(135deg, #b78e51, #e6cfae, #b78e51);
+  border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: #623e2a;
   font-size: 1rem;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
 .experiencia-card:hover .experiencia-card-arrow {
-  background: var(--color-primary);
+  filter: brightness(0.98);
   color: var(--color-white);
 }
 
@@ -299,9 +305,10 @@ section p {
 
 .para-quien-title {
   font-family: var(--font-heading);
-  font-size: 3.5rem;
+  font-size: 5rem;
   line-height: 1.1;
-  font-style: italic;
+  /*font-style: italic;*/
+  font-weight: 400;
 }
 
 .para-quien-right {
@@ -445,16 +452,6 @@ section p {
   background: linear-gradient(135deg, #c9a066, #e6cfae, #c9a066);
 }
 
-.san-blas-brillo {
-  position: absolute;
-  top: 8%;
-  right: 2%;
-  width: 25rem;
-  height: auto;
-  pointer-events: none;
-  z-index: 2;
-}
-
 /* EQUIPO Y BARCOS */
 .equipo-barcos {
   background-size: cover;
@@ -501,16 +498,16 @@ section p {
 .barcos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 2.5rem;
   width: 100%;
-  max-width: 56.25rem;
+  max-width: 70rem;
 }
 
 .barco-card {
   background: transparent;
   border: 2px solid var(--color-bg);
-  border-radius: 12px;
-  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  padding: 3.5rem 2.75rem;
   text-align: center;
 }
 
@@ -526,14 +523,14 @@ section p {
 
 .barco-card-title {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
+  font-size: 2.125rem;
   color: var(--color-bg);
   margin-bottom: 1rem;
 }
 
 .barco-card-text {
   font-family: var(--font-body);
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
   color: var(--color-bg);
   line-height: 1.6;
 }
@@ -548,22 +545,12 @@ section p {
   padding: 0.3rem 0;
   color: var(--color-bg);
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .barco-card-lista li::marker {
   color: var(--color-bg);
-}
-
-.equipo-barcos-brillo {
-  position: absolute;
-  top: 28%;
-  left: 8%;
-  width: 18.75rem;
-  height: auto;
-  pointer-events: none;
-  z-index: 2;
 }
 
 /* CTA FINAL */
@@ -978,12 +965,6 @@ section p {
     padding: 4rem 1.5rem;
   }
 
-  .san-blas-brillo {
-    width: 80px;
-    top: 2%;
-    right: 2%;
-  }
-
   .san-blas-title {
     font-size: clamp(34px, 7vw, 44px);
   }
@@ -1028,12 +1009,6 @@ section p {
   .equipo-barcos {
     min-height: auto;
     padding: 4rem 1.5rem;
-  }
-
-  .equipo-barcos-brillo {
-    width: 120px;
-    top: 0;
-    left: 0;
   }
 
   .equipo-barcos-title {
