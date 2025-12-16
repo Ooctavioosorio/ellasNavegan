@@ -8,7 +8,7 @@ const Contacto = () => {
       {/* HERO */}
       <section className="hero-contacto" style={{ backgroundImage: `url(${heroContactoImg})` }}>
         <div className="container">
-          <h1 className="u-text-gradient-gold-135">Hablemos sobre tu próximo viaje en el mar.</h1>
+          <h1 className="u-text-gradient-gold-135">Hablemos sobre tu<br />próximo viaje en el mar.</h1>
           <p className="subtitulo">
             Si quieres conocer más sobre nuestras rutas, disponibilidad, barcos o cómo funciona la experiencia, agenda una llamada directa con Jessica. Es el espacio ideal para resolver dudas y saber si este viaje es perfecto para ti.
           </p>
