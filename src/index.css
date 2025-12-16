@@ -1,7 +1,7 @@
 /* Tipografía The Seasons */
 @font-face {
   font-family: 'The Seasons';
-  src: url('./assets/fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
+  src: url('./assets/fonts/fonnts.com-theseasons-reg.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'The Seasons';
-  src: url('./assets/fonts/Fontspring-DEMO-theseasons-lt.otf') format('opentype');
+  src: url('./assets/fonts/fonnts.com-theseasons-lt.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'The Seasons';
-  src: url('./assets/fonts/Fontspring-DEMO-theseasons-bd.otf') format('opentype');
+  src: url('./assets/fonts/fonnts.com-theseasons-bd.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'The Seasons';
-  src: url('./assets/fonts/Fontspring-DEMO-theseasons-it.otf') format('opentype');
+  src: url('./assets/fonts/fonnts.com-theseasons-it.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: 'The Seasons';
-  src: url('./assets/fonts/Fontspring-DEMO-theseasons-ltit.otf') format('opentype');
+  src: url('./assets/fonts/fonnts.com-theseasons-ltit.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
   font-family: 'The Seasons';
-  src: url('./assets/fonts/Fontspring-DEMO-theseasons-bdit.otf') format('opentype');
+  src: url('./assets/fonts/fonnts.com-theseasons-bdit.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;

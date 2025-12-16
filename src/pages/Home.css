@@ -166,7 +166,7 @@ section p {
 
 .experiencia-bordo-title {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -229,14 +229,14 @@ section p {
 
 .experiencia-card-label {
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: 1.7rem;
   color: var(--color-white);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .experiencia-card-number {
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: 1.7rem;
   color: var(--color-white);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -958,7 +958,7 @@ section p {
   }
 
   .experiencia-card-label {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   section {
