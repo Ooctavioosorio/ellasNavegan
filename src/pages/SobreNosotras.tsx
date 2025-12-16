@@ -2,6 +2,8 @@ import './SobreNosotras.css';
 import heroSobreImg from '../assets/images/mujeresCreandoExperiencia.png';
 import nuestraEsenciaImg from '../assets/images/nuestaEsencia.png';
 import fundadoraImg from '../assets/images/doradoOscuro.png';
+import capitana1Img from '../assets/images/capitana1.jpeg';
+import capitana2Img from '../assets/images/capitana2.jpeg';
 
 const SobreNosotras = () => {
   return (
@@ -10,7 +12,13 @@ const SobreNosotras = () => {
       <section className="hero-sobre" style={{ backgroundImage: `url(${heroSobreImg})` }}>
         <div className="hero-sobre-overlay">
           <div className="container">
-            <h1 className="u-text-gradient-gold-135" data-aos="fade-down">Somos mujeres creando experiencias únicas en el mar para mujeres extraordinarias.</h1>
+            <h1 className="u-text-gradient-gold-135" data-aos="fade-down">
+              Somos mujeres creando
+              <br />
+              experiencias únicas en el mar
+              <br />
+              para mujeres extraordinarias.
+            </h1>
             <p className="subtitulo" data-aos="fade-up" data-aos-delay="200">
               Viajes seguros, conscientes y transformadores en uno de los lugares más
               hermosos del mundo.
@@ -93,14 +101,18 @@ const SobreNosotras = () => {
           </p>
           <div className="equipo-grid">
             <div className="miembro-card">
-              <div className="miembro-foto"></div>
-              <h4><em>Nombre</em></h4>
-              <p>Breve descripción de la capitana y sus preferencias personales en sus viajes.</p>
+              <div className="miembro-foto">
+                <img src={capitana1Img} alt="Capitana Elena Fischer" loading="lazy" />
+              </div>
+              <h4><em>Capitana Elena Fischer</em></h4>
+              <p>De Alemania, fue a navegar por motivos de turismo en Panama y se enamoro del mar, ahora trabaja como capitana de su propio barco, llamado Fliying Giny, en San Blas, Panama.</p>
             </div>
             <div className="miembro-card">
-              <div className="miembro-foto"></div>
-              <h4><em>Nombre</em></h4>
-              <p>Breve descripción de la capitana y sus preferencias personales en sus viajes.</p>
+              <div className="miembro-foto">
+                <img src={capitana2Img} alt="Capitana Alexia Prud’homme" loading="lazy" />
+              </div>
+              <h4><em>Capitana Alexia Prud’homme</em></h4>
+              <p>Tiene experiencia en enfermería y ha trabajado en hospitales durante muchos años. Así que relájate y quédate tranquilo, estás en buenas manos, ¡al menos cuando ella está aquí!</p>
             </div>
           </div>
         </div>
