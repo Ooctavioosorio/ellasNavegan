@@ -117,6 +117,14 @@
   filter: brightness(0.6) saturate(1.2);
 }
 
+.logo-img-mobile {
+  display: none;
+}
+
+.logo-img-desktop {
+  display: block;
+}
+
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -182,6 +190,14 @@
 }
 
 @media (max-width: 768px) {
+  .logo-img-desktop {
+    display: none;
+  }
+
+  .logo-img-mobile {
+    display: block;
+  }
+
   .navbar-menu {
     display: none;
   }

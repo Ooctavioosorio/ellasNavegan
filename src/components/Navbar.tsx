@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import logoMobileImg from '../assets/images/doradoOscuro.png';
 
 const Navbar = () => {
   const location = useLocation();
@@ -16,7 +17,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src="/logo.png" alt="Ellas Navegan" className="logo-img" />
+          <img src="/logo.png" alt="Ellas Navegan" className="logo-img logo-img-desktop" />
+          <img src={logoMobileImg} alt="Ellas Navegan" className="logo-img logo-img-mobile" />
         </Link>
 
         <button
