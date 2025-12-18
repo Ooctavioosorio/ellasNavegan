@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './SobreNosotras.css';
 import heroSobreImg from '../assets/images/mujeresCreandoExperiencia.png';
 import nuestraEsenciaImg from '../assets/images/nuestaEsencia.png';
@@ -6,6 +7,46 @@ import capitana1Img from '../assets/images/capitana1.jpeg';
 import capitana2Img from '../assets/images/capitana2.jpeg';
 
 const SobreNosotras = () => {
+  const equipo = [
+    {
+      id: 'elena-fischer',
+      nombre: 'Capitana Elena Fischer',
+      img: capitana1Img,
+      modalTexto:
+        'capitana originaria de Alemania, llegó a Panamá inicialmente por turismo, sin imaginar que ese viaje cambiaría para siempre el rumbo de su vida. Lo que comenzó como una visita terminó convirtiéndose en un encuentro profundo con el mar: su inmensidad, su libertad y su fuerza despertaron en ella una conexión tan auténtica que decidió quedarse y aprender a gobernar un barco, dejando que el océano marcara su nuevo camino.\n\nCon el paso del tiempo, y gracias a una sólida formación náutica, disciplina y un trabajo constante lleno de dedicación, Elena logró transformar esa pasión nacida del viaje en una verdadera profesión. Años después, hizo realidad su sueño de convertirse en capitana de su propia embarcación, el Flying Giny, desde donde hoy navega las aguas cristalinas de San Blas, Panamá.\n\nDesde allí, comparte con cada viajero no solo la belleza del archipiélago, sino también una forma de vivir el mar basada en el respeto, la aventura y el propósito, tal como ella misma lo descubrió cuando decidió seguir la llamada del océano.',
+    },
+    {
+      id: 'alexia-prudhomme',
+      nombre: 'Capitana Alexia Prud’homme',
+      img: capitana2Img,
+      modalTexto:
+        'es la capitana y anfitriona a bordo, quien se encarga de que todo tu viaje con nosotros sea agradable, seguro y lo más fluido posible. Está siempre atenta a cada detalle, acompañándote y asegurándose de que la experiencia sea tranquila y bien cuidada de principio a fin. Como valor añadido, cuenta con formación en enfermería y una amplia experiencia trabajando en hospitales durante muchos años, lo que aporta un extra de seguridad y confianza a bordo. Así que relájate y disfruta: estás en muy buenas manos… al menos cuando ella está aquí.\n\nRaphaëlle Prud’homme\nChef\n\nLa chef —sí, LA chef— es también anfitriona, alma del barco, apoyo en cubierta y, básicamente, quien se asegura de que todo funcione y tú estés bien. Su alegría, energía y amor por lo que hace iluminan cada día a bordo. Te conquistará con su increíble cocina fresca y llena de sabor: pulpo, langosta, lasaña, mousse de chocolate y mucho más. Un consejo amistoso: mantente de su lado bueno… de lo contrario, ¡bienvenido a la guarida del león!',
+    },
+  ];
+
+  const [equipoActivoId, setEquipoActivoId] = useState<string | null>(null);
+  const miembroActivo = equipo.find((m) => m.id === equipoActivoId) ?? null;
+
+  useEffect(() => {
+    if (!miembroActivo) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setEquipoActivoId(null);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [miembroActivo]);
+
+  useEffect(() => {
+    if (!miembroActivo) return;
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [miembroActivo]);
+
   return (
     <div className="sobre-nosotras">
       {/* HERO */}
@@ -102,14 +143,28 @@ const SobreNosotras = () => {
           <div className="equipo-grid">
             <div className="miembro-card">
               <div className="miembro-foto">
-                <img src={capitana1Img} alt="Capitana Elena Fischer" loading="lazy" />
+                <button
+                  type="button"
+                  className="miembro-foto-btn"
+                  onClick={() => setEquipoActivoId('elena-fischer')}
+                  aria-label="Ver más sobre Capitana Elena Fischer"
+                >
+                  <img src={capitana1Img} alt="Capitana Elena Fischer" loading="lazy" />
+                </button>
               </div>
               <h4><em>Capitana Elena Fischer</em></h4>
               <p>De Alemania, fue a navegar por motivos de turismo en Panama y se enamoro del mar, ahora trabaja como capitana de su propio barco, llamado Fliying Giny, en San Blas, Panama.</p>
             </div>
             <div className="miembro-card">
               <div className="miembro-foto">
-                <img src={capitana2Img} alt="Capitana Alexia Prud’homme" loading="lazy" />
+                <button
+                  type="button"
+                  className="miembro-foto-btn"
+                  onClick={() => setEquipoActivoId('alexia-prudhomme')}
+                  aria-label="Ver más sobre Capitana Alexia Prud’homme"
+                >
+                  <img src={capitana2Img} alt="Capitana Alexia Prud’homme" loading="lazy" />
+                </button>
               </div>
               <h4><em>Capitana Alexia Prud’homme</em></h4>
               <p>Tiene experiencia en enfermería y ha trabajado en hospitales durante muchos años. Así que relájate y quédate tranquilo, estás en buenas manos, ¡al menos cuando ella está aquí!</p>
@@ -117,6 +172,38 @@ const SobreNosotras = () => {
           </div>
         </div>
       </section>
+
+      {miembroActivo && (
+        <div
+          className="equipo-modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Más sobre ${miembroActivo.nombre}`}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) setEquipoActivoId(null);
+          }}
+        >
+          <div className="equipo-modal">
+            <button
+              type="button"
+              className="equipo-modal-close"
+              onClick={() => setEquipoActivoId(null)}
+              aria-label="Cerrar"
+            >
+              ×
+            </button>
+
+            <div className="equipo-modal-text">
+              <h3 className="equipo-modal-title"><em>{miembroActivo.nombre}</em></h3>
+              <p>{miembroActivo.modalTexto}</p>
+            </div>
+
+            <div className="equipo-modal-image">
+              <img src={miembroActivo.img} alt={miembroActivo.nombre} />
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* NUESTROS CATAMARANES */}
       <section className="nuestros-barcos">
