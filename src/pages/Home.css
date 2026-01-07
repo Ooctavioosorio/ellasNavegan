@@ -33,11 +33,11 @@
 }
 
 .hero-title-light {
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .hero-title-bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero-subtitle {
@@ -308,7 +308,7 @@ section p {
   font-size: 5rem;
   line-height: 1.1;
   /*font-style: italic;*/
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .para-quien-right {
@@ -359,7 +359,7 @@ section p {
 }
 
 .para-quien-cierre strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .para-quien-btn {
