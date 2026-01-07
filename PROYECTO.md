@@ -221,25 +221,56 @@ npm run preview
 - `heroContacto.png` - Hero Contacto
 - `agendallamada.png` - Sección Agenda Llamada
 
+### ✅ Integraciones y Links (Actualizado Enero 2026)
+
+- [x] **Galería de imágenes reales** - 12 imágenes agregadas en La Experiencia (`IMG_8502.jpg` - `IMG_8513.jpg`)
+- [x] **Modal interactivo para equipo** - Biografías de capitanas con modal clickeable en Sobre Nosotras
+- [x] **Lightbox para galería** - Visualización de imágenes en tamaño completo con cierre por Escape o click
+- [x] **Integración Calendly completa** - Todos los botones CTA conectados a https://calendly.com/jessica-ellasnavegan/30min
+- [x] **Links de Instagram actualizados** - Footer y Contacto con link oficial: https://www.instagram.com/ellasnavegan?igsh=MWhxN3E0MnpnMDN4bw==
+- [x] **Email actualizado** - jessica.ellasnavegan@gmail.com en Footer y Contacto
+- [x] **Footer estilizado** - Colores actualizados a blanco (#fff) para mejor legibilidad
+- [x] **Fotos del equipo** - Capitana Elena Fischer y Capitana Alexia Prud'homme agregadas
+
+### 📋 Botones CTA con Calendly Integrados
+
+**Navbar:**
+- "Agenda llamada y reserva" (desktop y móvil) → Calendly
+
+**Footer:**
+- "Agenda tu llamada" → Calendly
+
+**Home (4 botones):**
+- "Agendar llamada gratuita" (hero) → Calendly
+- "Saber más" → Navegación interna a `/sobre-nosotras`
+- "Haz una reserva" → Calendly
+- "Agendar llamada gratuita" (CTA final) → Calendly
+
+**Sobre Nosotras:**
+- "Quiero ser una de ellas" → Calendly
+
+**La Experiencia (2 botones):**
+- "Hacer mi reserva" → Calendly
+- "Agendar aquí" → Calendly
+
+**Contacto (2 botones):**
+- "Quiero ser una de ellas" → Calendly
+- "Suscribirme" → Calendly
+
 ### ⏳ Pendiente
 
-- [ ] Agregar imágenes reales a sección Galería en La Experiencia
-- [ ] Integrar widget de calendario (Calendly u otro)
-- [ ] Agregar enlace real de WhatsApp
-- [ ] Configurar enlaces de redes sociales
-- [ ] Footer según diseño Canva
-- [ ] Agregar fotos reales del equipo en sección Nuestro Equipo
-- [ ] Agregar enlace de suscripción en botón Suscribirme
+- [ ] Agregar enlace real de WhatsApp en página Contacto (pendiente de recibir número)
 
 ---
 
 ## Información del Negocio (del PDF)
 
 ### Datos Clave
-- **Fundadora:** Jessica Milagro (15+ años navegando)
+- **Fundadora:** Jessica Milagro (6+ años navegando)
 - **Ubicación:** San Blas, Panamá
-- **Instagram:** @ellasnavegan
-- **Email:** contacto@ellasnavegan.com
+- **Instagram:** @ellasnavegan → https://www.instagram.com/ellasnavegan?igsh=MWhxN3E0MnpnMDN4bw==
+- **Email:** jessica.ellasnavegan@gmail.com
+- **Calendly:** https://calendly.com/jessica-ellasnavegan/30min
 
 ### Dos Tipos de Barco
 1. **Barco Esencial** - Experiencia íntima y accesible
@@ -319,4 +350,23 @@ El atributo `data-aos-delay` permite escalonar las animaciones (en ms).
 
 ---
 
-*Última actualización: 15 Diciembre 2025*
+## Registro de Cambios
+
+### Enero 2026
+- ✅ Integración completa de Calendly en todos los botones CTA
+- ✅ Actualización de links de Instagram con parámetros oficiales
+- ✅ Actualización de email a jessica.ellasnavegan@gmail.com
+- ✅ Mejora de estilos del Footer (colores blancos para mejor legibilidad)
+- ✅ Galería de 12 imágenes reales implementada con lightbox funcional
+- ✅ Modal interactivo para biografías del equipo
+- ✅ Fotos reales de capitanas agregadas
+
+### Diciembre 2025
+- ✅ Estructura base del proyecto implementada
+- ✅ Todas las páginas completadas según diseño de Canva
+- ✅ Sistema de animaciones AOS configurado
+- ✅ Diseño responsive implementado
+
+---
+
+*Última actualización: 7 Enero 2026*

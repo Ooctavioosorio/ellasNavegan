@@ -1,4 +1,5 @@
 import './Home.css';
+import { Link } from 'react-router-dom';
 import heroImage from '../assets/images/hero.png';
 import hero2Image from '../assets/images/hero2.png';
 import capitanasExpertasImg from '../assets/images/capitanasexpertas.png';
@@ -33,7 +34,14 @@ const Home = () => {
               Caribe. Rutas guiadas para soltar la autoexigencia, bajar el ritmo
               y reconectar contigo en un entorno seguro y femenino.
             </p>
-            <a href="#" className="hero-cta u-bg-gradient-gold-135">Agendar llamada gratuita</a>
+            <a
+              href="https://calendly.com/jessica-ellasnavegan/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-cta u-bg-gradient-gold-135"
+            >
+              Agendar llamada gratuita
+            </a>
           </div>
           <div className="hero-image" data-aos="fade-left" data-aos-delay="300">
             <img src={heroImage} alt="Mujer disfrutando en barco en San Blas" className="hero-img" />
@@ -159,7 +167,7 @@ const Home = () => {
               Y lo más mágico es que todo sucede despacio, sin ruido y sin exigencias. La vida corre diferente: el mar marca el tiempo, la naturaleza te sostiene y la energía femenina que se crea entre nosotras transforma el viaje en algo más que un escape… se vuelve un recordatorio de quién eres cuando te das permiso de simplemente SER.
             </p>
           </div>
-          <a href="#" className="san-blas-btn u-bg-gradient-gold-135">Saber más</a>
+          <Link to="/sobre-nosotras" className="san-blas-btn u-bg-gradient-gold-135">Saber más</Link>
         </div>
       </section>
 
@@ -181,7 +189,14 @@ const Home = () => {
                 <li>Quieren aventura, pero sin renunciar al bienestar.</li>
               </ul>
               <p className="para-quien-cierre"><strong>Si te resuena viajar con propósito, este espacio es para ti.</strong></p>
-              <a href="#" className="para-quien-btn">Haz una reserva</a>
+              <a
+                href="https://calendly.com/jessica-ellasnavegan/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="para-quien-btn"
+              >
+                Haz una reserva
+              </a>
             </div>
           </div>
         </div>
@@ -244,7 +259,16 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <a href="#" className="cta-final-btn u-bg-gradient-gold-135" data-aos="zoom-in" data-aos-delay="400">Agendar llamada gratuita</a>
+        <a
+          href="https://calendly.com/jessica-ellasnavegan/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-final-btn u-bg-gradient-gold-135"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          Agendar llamada gratuita
+        </a>
       </section>
 
       {/* MUY PRONTO 2026 */}

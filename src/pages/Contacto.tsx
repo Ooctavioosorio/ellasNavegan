@@ -21,7 +21,14 @@ const Contacto = () => {
           <img src={agendaLlamadaImg} alt="Agenda tu llamada" className="agenda-llamada-img" />
           <div className="agenda-llamada-content">
             <h2 className="u-text-gradient-gold-135">Agenda tu llamada<br />gratuita</h2>
-            <a href="#" className="btn-agenda u-bg-gradient-gold-135">Quiero ser una de ellas</a>
+            <a
+              href="https://calendly.com/jessica-ellasnavegan/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-agenda u-bg-gradient-gold-135"
+            >
+              Quiero ser una de ellas
+            </a>
           </div>
         </div>
       </section>
@@ -44,7 +51,7 @@ const Contacto = () => {
                 </div>
                 <h3>Instagram</h3>
                 <p>@ellasnavegan</p>
-                <a href="https://instagram.com/ellasnavegan" target="_blank" rel="noopener noreferrer" className="btn-contacto">
+                <a href="https://www.instagram.com/ellasnavegan?igsh=MWhxN3E0MnpnMDN4bw==" target="_blank" rel="noopener noreferrer" className="btn-contacto">
                   Ver instagram
                 </a>
               </div>
@@ -72,8 +79,8 @@ const Contacto = () => {
                   </svg>
                 </div>
                 <h3>Correo</h3>
-                <p>contacto@ellasnavegan</p>
-                <a href="mailto:contacto@ellasnavegan.com" className="btn-contacto">
+                <p>jessica.ellasnavegan@gmail.com</p>
+                <a href="mailto:jessica.ellasnavegan@gmail.com" className="btn-contacto">
                   Enviar un correo
                 </a>
               </div>
@@ -91,7 +98,14 @@ const Contacto = () => {
               desconectar del ruido y reconectar con tu esencia, aquí tienes un lugar
               seguro para hacerlo.
             </p>
-            <a href="#" className="btn-suscribirse">Suscribirme</a>
+            <a
+              href="https://calendly.com/jessica-ellasnavegan/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-suscribirse"
+            >
+              Suscribirme
+            </a>
           </div>
         </div>
       </section>

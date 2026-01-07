@@ -108,7 +108,14 @@ const SobreNosotras = () => {
           <p>
             Esto no es un detalle. Es el corazón de Ellas Navegan
           </p>
-          <a href="#" className="btn-mujeres u-bg-gradient-gold-135">Quiero ser una de ellas</a>
+          <a
+            href="https://calendly.com/jessica-ellasnavegan/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-mujeres u-bg-gradient-gold-135"
+          >
+            Quiero ser una de ellas
+          </a>
         </div>
       </section>
 

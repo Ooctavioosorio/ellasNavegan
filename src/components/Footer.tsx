@@ -24,13 +24,13 @@ const Footer = () => {
           <h4>Contacto</h4>
           <ul>
             <li>
-              <a href="https://instagram.com/ellasnavegan" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/ellasnavegan?igsh=MWhxN3E0MnpnMDN4bw==" target="_blank" rel="noopener noreferrer">
                 @ellasnavegan
               </a>
             </li>
             <li>
-              <a href="mailto:contacto@ellasnavegan.com">
-                contacto@ellasnavegan.com
+              <a href="mailto:jessica.ellasnavegan@gmail.com">
+                jessica.ellasnavegan@gmail.com
               </a>
             </li>
           </ul>
@@ -38,9 +38,14 @@ const Footer = () => {
 
         <div className="footer-cta">
           <h4>¿Lista para navegar?</h4>
-          <Link to="/contacto" className="btn-primary">
+          <a
+            href="https://calendly.com/jessica-ellasnavegan/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
             Agenda tu llamada
-          </Link>
+          </a>
         </div>
       </div>
 

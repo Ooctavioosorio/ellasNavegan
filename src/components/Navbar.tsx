@@ -56,9 +56,14 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <Link to="/contacto" className="navbar-cta u-bg-gradient-gold-135">
+        <a
+          href="https://calendly.com/jessica-ellasnavegan/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="navbar-cta u-bg-gradient-gold-135"
+        >
           Agenda llamada y reserva
-        </Link>
+        </a>
       </div>
 
       <div className={isMobileMenuOpen ? 'navbar-mobile-overlay is-open' : 'navbar-mobile-overlay'}>
@@ -93,9 +98,14 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <Link to="/contacto" className="navbar-mobile-cta u-bg-gradient-gold-135">
+          <a
+            href="https://calendly.com/jessica-ellasnavegan/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar-mobile-cta u-bg-gradient-gold-135"
+          >
             Agenda llamada y reserva
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

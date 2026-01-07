@@ -111,7 +111,16 @@ const LaExperiencia = () => {
           <p data-aos="fade-right" data-aos-delay="200">
             Sus trayectos cortos y la navegación suave lo hacen ideal para mujeres que buscan seguridad y tranquilidad, mientras que su entorno intacto potencia cada momento de bienestar desde yoga al amanecer y respiración frente al mar, hasta caminatas en arena blanca y silencios que ordenan. La intimidad del archipiélago crea libertad emocional: un espacio donde las mujeres se abren, se sienten ellas mismas y conectan sin tensión. Entre snorkel, arrecifes vivos, playas remotas y la cultura Guna Yala, cada día sorprende y reconecta con lo esencial, ofreciendo un viaje suave, profundo y revitalizante.
           </p>
-          <a href="#" className="btn-san-blas u-bg-gradient-gold-135" data-aos="fade-up" data-aos-delay="300">Hacer mi reserva</a>
+          <a
+            href="https://calendly.com/jessica-ellasnavegan/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-san-blas u-bg-gradient-gold-135"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            Hacer mi reserva
+          </a>
         </div>
       </section>
 
@@ -165,7 +174,16 @@ const LaExperiencia = () => {
           <p className="galeria-intro" data-aos="fade-up">
             Si quieres vivir esta experiencia y reconectar con tu esencia en el mar, agenda tu llamada gratuita.
           </p>
-          <a href="#" className="btn-galeria" data-aos="fade-up" data-aos-delay="100">Agendar aquí</a>
+          <a
+            href="https://calendly.com/jessica-ellasnavegan/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-galeria"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Agendar aquí
+          </a>
         </div>
       </section>
 
